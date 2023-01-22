@@ -13,85 +13,85 @@ const courses = [
             {
                 id: 2,
                 title: "What is HTML",
-                description: "Lorem ipsum", 
+                description: "Short explanation of HTML", 
                 vimeoId: 76979871
             },
             {
                 id: 3,
                 title: "The Structure of HTML Pages",
-                description: "Lorem ipsum", 
+                description: "How HTML pages are structured", 
                 vimeoId: 76979871
             },
             {
                 id: 4,
                 title: "HTML Tags & Attributes",
-                description: "Lorem ipsum", 
+                description: "What are tags and attributes in HTML", 
                 vimeoId: 76979871
             },
             {
                 id: 5,
                 title: "Headings & Paragraphs in HTML",
-                description: "Lorem ipsum", 
+                description: "Explaination of headings and paragraphs", 
                 vimeoId: 76979871
             },
             {
                 id: 6,
                 title: "Text Formatting in HTML",
-                description: "Lorem ipsum", 
+                description: "How text formatting works in HTML", 
                 vimeoId: 76979871
             },
             {
                 id: 7,
                 title: "HTML Images",
-                description: "Lorem ipsum", 
+                description: "How images are added in HTML pages", 
                 vimeoId: 76979871
             },
             {
                 id: 8,
                 title: "Tables & Lists in HTML",
-                description: "Lorem ipsum", 
+                description: "How tables and list work in HTML", 
                 vimeoId: 76979871
             },
             {
                 id: 9,
                 title: "HTML Forms",
-                description: "Lorem ipsum", 
+                description: "What forms are in HTML", 
                 vimeoId: 76979871
             },
             {
                 id: 10,
                 title: "Creating a Simple HTML Page from Scratch",
-                description: "Lorem ipsum", 
+                description: "Create the first HTML page", 
                 vimeoId: 76979871
             },
             {
                 id: 11,
                 title: "Styling HTML Elements",
-                description: "Lorem ipsum", 
+                description: "How to style HTML elements", 
                 vimeoId: 76979871
             },
             {
                 id: 12,
                 title: "HTML Classes & IDs",
-                description: "Lorem ipsum", 
+                description: "Why classes and IDs are in HTML", 
                 vimeoId: 76979871
             },
             {
                 id: 13,
                 title: "HTML Links with Anchor Tags",
-                description: "Lorem ipsum", 
+                description: "How to add links using anchor tags", 
                 vimeoId: 76979871
             },
             {
                 id: 14,
                 title: "Comments on HTML Pages",
-                description: "Lorem ipsum", 
+                description: "How to make comments in HTML code", 
                 vimeoId: 76979871
             },
             {
                 id: 15,
                 title: "HTML Cheatsheet",
-                description: "Lorem ipsum", 
+                description: "Recap of the basics of HTML", 
                 vimeoId: 76979871
             },
 
@@ -111,85 +111,85 @@ const courses = [
         {
             id: 2,
             title: "What is CSS?",
-            description: "Lorem ipsum", 
+            description: "Introduction to what CSS is", 
             vimeoId: 76979871
         },
         {
             id: 3,
             title: "CSS Selectors",
-            description: "Lorem ipsum", 
+            description: "How selectors work in CSS", 
             vimeoId: 76979871
         },
         {
             id: 4,
             title: "Setting Colors with CSS",
-            description: "Lorem ipsum", 
+            description: "How to set colors using CSS", 
             vimeoId: 76979871
         },
         {
             id: 5,
             title: "The Box Model",
-            description: "Lorem ipsum", 
+            description: "Explanation of the box model", 
             vimeoId: 76979871
         },
         {
             id: 6,
             title: "Padding & Margin in CSS",
-            description: "Lorem ipsum", 
+            description: "How padding and margin works in CSS", 
             vimeoId: 76979871
         },
         {
             id: 7,
             title: "Borders",
-            description: "Lorem ipsum", 
+            description: "How to add borders to HTML elements", 
             vimeoId: 76979871
         },
         {
             id: 8,
             title: "Height & Width in CSS",
-            description: "Lorem ipsum", 
+            description: "Why adding height and width can be useful in CSS", 
             vimeoId: 76979871
         },
         {
             id: 9,
             title: "The Display Property",
-            description: "Lorem ipsum", 
+            description: "How the display property work in CSS", 
             vimeoId: 76979871
         },
         {
             id: 10,
             title: "Styling Text Using CSS",
-            description: "Lorem ipsum", 
+            description: "How to style text with CSS", 
             vimeoId: 76979871
         },
         {
             id: 11,
             title: "Customizing the Background with CSS",
-            description: "Lorem ipsum", 
+            description: "How to change background in CSS", 
             vimeoId: 76979871
         },
         {
             id: 12,
             title: "Screen Customization & Media Queries",
-            description: "Lorem ipsum", 
+            description: "How to adapt your HTML pages to different screen sizes", 
             vimeoId: 76979871
         },
         {
             id: 13,
             title: "The Z-Index",
-            description: "Lorem ipsum", 
+            description: "What the z-index is in CSS", 
             vimeoId: 76979871
         },
         {
             id: 14,
             title: "CSS Align",
-            description: "Lorem ipsum", 
+            description: "How to align elements in CSS", 
             vimeoId: 76979871
         },
         {
             id: 15,
             title: "CSS Cheatsheet",
-            description: "Lorem ipsum", 
+            description: "Recap of the basics of CSS", 
             vimeoId: 76979871
         },
     ]
@@ -208,85 +208,85 @@ const courses = [
     {
         id: 2,
         title: "What is Javascript?",
-        description: "Lorem ipsum", 
+        description: "Introduction of Javascript", 
         vimeoId: 76979871
     },
     {
         id: 3,
         title: "Javascript Values",
-        description: "Lorem ipsum", 
+        description: "What values are in Javascript", 
         vimeoId: 76979871
     },
     {
         id: 4,
         title: "Creating Variables",
-        description: "Lorem ipsum", 
+        description: "How to create variables in Javascript", 
         vimeoId: 76979871
     },
     {
         id: 5,
         title: "Operators in Javascript",
-        description: "Lorem ipsum", 
+        description: "What are operators in Javascript", 
         vimeoId: 76979871
     },
     {
         id: 6,
         title: "Statements in Javascript",
-        description: "Lorem ipsum", 
+        description: "How statements are in Javascript", 
         vimeoId: 76979871
     },
     {
         id: 7,
         title: "Events in Javascript",
-        description: "Lorem ipsum", 
+        description: "What events do and how to used them in Javascript", 
         vimeoId: 76979871
     },
     {
         id: 8,
         title: "Objects in Javascript",
-        description: "Lorem ipsum", 
+        description: "What are Javascript objects", 
         vimeoId: 76979871
     },
     {
         id: 9,
         title: "Arrays in Javascript",
-        description: "Lorem ipsum", 
+        description: "What are Javascript arrays", 
         vimeoId: 76979871
     },
     {
         id: 10,
         title: "Functions in Javascript",
-        description: "Lorem ipsum", 
+        description: "How to use Javascript functions", 
         vimeoId: 76979871
     },
     {
         id: 11,
         title: "Methods in Javascript",
-        description: "Lorem ipsum", 
+        description: "What are methods in Javascript", 
         vimeoId: 76979871
     },
     {
         id: 12,
         title: "Loops in Javascript",
-        description: "Lorem ipsum", 
+        description: "What loops are for in Javascript", 
         vimeoId: 76979871
     },
     {
         id: 13,
         title: "If Statements in Javascript",
-        description: "Lorem ipsum", 
+        description: "How to use If statements in Javascript", 
         vimeoId: 76979871
     },
     {
         id: 14,
         title: "Switch Statements in Javascript",
-        description: "Lorem ipsum", 
+        description: "How to use Switch statements in Javascript", 
         vimeoId: 76979871
     },
     {
         id: 15,
         title: "Javascript Cheatsheet",
-        description: "Lorem ipsum", 
+        description: "Recap of the basics of Javascript", 
         vimeoId: 76979871
     },
 ]
