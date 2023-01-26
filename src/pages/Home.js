@@ -3,6 +3,7 @@ import courses from '../courses'
 import CourseSummary from '../components/CourseSummary'
 
 function Home() {
+
   return (
     <div className='Home page'>
         <header>

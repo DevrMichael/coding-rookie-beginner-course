@@ -24,23 +24,24 @@ function App() {
     <div className='App'>
       <main>
         <nav>
-              {isAuth && <Link className='button primary' to="/">Home</Link>}
-              {isAuth && <Link className='button primary' to="/course">Course</Link>}
-              {!isAuth ? <Link className='button primary' to="/login">Login</Link> : <button className='button primary' onClick={signUserOut}>Log Out</button>}
+              <Link className='button primary' to="/">Home</Link>
+              <Link className='button primary' to="/course">Course</Link>
+              <Link className='button primary' to="/login">Login</Link> 
+              <button className='button primary' onClick={signUserOut}>Log Out</button>
         </nav>
         <Routes>
-          {isAuth && <Route 
+          <Route 
             path="/"
             element={<Home />}
-          />}
-          {isAuth && <Route 
+          />
+          <Route 
             path="/courses/:courseId"
             element={<Course />}
-          />}
-          {isAuth && <Route 
+          />
+          <Route 
             path="/courses/:courseId/lessons/:lessonId"
             element={<Lesson />}
-          />}
+          />
           <Route 
             path="/login"
             element={<Login setIsAuth={setIsAuth} />}

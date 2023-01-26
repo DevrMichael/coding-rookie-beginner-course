@@ -8,6 +8,23 @@ const courses = [
                 id: 1,
                 title: "Welcome to the HTML course",
                 description: "First HTML module", 
+                introduction: "This is the introduction for this lesson. The content displayed here will serve as a brief introduction to the lesson. This section should contain 2-3 paragraphs followed by a snippet of code, which details the essence of this lesson.",
+                body: "This is where the body goes. In this section we will dive into the meat of the lesson, explaining the most important parts in a way that is simple, easy to understand and memorable.",
+                codesnippet: `
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>This is where you write your page title/header</title>
+                </head>
+                <body>
+                    This is where all the page content goes including the text, 
+                    images and videos
+                </body>
+            </html>
+                `,
+                summary: "This is a summary of this lesson. It also will serve as a tee-up for the video that encapsulates this lesson.",
                 vimeoId: 76979871
             },
             {
