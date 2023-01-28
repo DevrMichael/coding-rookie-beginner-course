@@ -93,11 +93,14 @@ const courses = [
             {
                 id: 5,
                 title: "Headings & Paragraphs in HTML",
-                description: "Explaination of headings and paragraphs", 
-                introduction: "",
-                body: "",
-                codesnippet: "",
-                summary:"",
+                description: "Explanation of headings and paragraphs", 
+                introduction: "Most HTML pages have headings and paragraphs and knowing how to structure your HTML pages with their element tags is one of the first step to know about when learning the language.",
+                body: "Headings have 6 different element tags in HTML. They range from <h1> which is the largest text size to <h6>. <h1> is used for the headlines of any pages, blogposts or articles, while the other tags are used for subsequent headlines. Paragraphs are written within <p> tags and most often will be placed below a heading tag.",
+                codesnippet: `
+                <h1> - <h6> element tags are used for headlines.
+                <p> element tags are used for paragraphs.
+                `,
+                summary:"Most websites have some form of text on them and a lot of them are structured using headlines followed by paragraph tags.",
                 vimeoId: 76979871
             },
             {
