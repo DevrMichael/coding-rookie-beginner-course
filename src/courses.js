@@ -124,8 +124,8 @@ const courses = [
                 introduction: "Images are essential part of almost any webpage. Knowing how to add them to your HTML documents can give you a immense freedom in being able to customize your webpages.",
                 body: "We add images to our HTML pages by using the <img> element along with a src attribute. The src attribute accepts a pathway to the image, which can come from one of two places. The first one is to add a webpage link from somewhere on the internet that holds the image you want to display. The second on is when you add the image document to your code and referance the pathway to the place in the code. Additionally you would want to add an alt attribute that explains the context of the image. This is important for screen readers, website crawlers and for broken images. This looks like this:",
                 codesnippet: `
-                1. <img src="https://picsum.photos/800/400" alt="explaining the image context"/>
-                2. <img src"/imagefolder/my-image.jpg" alt="explaining the image context"/>
+        1. <img src="https://picsum.photos/800/400" alt="explaining the image context"/>
+        2. <img src"/imagefolder/my-image.jpg" alt="explaining the image context"/>
                 `,
                 summary:"Images can easily be added anywhere on a webpage by using the <img> element and adding the src attribute.", 
                 vimeoId: 76979871
