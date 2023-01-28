@@ -107,20 +107,27 @@ const courses = [
                 id: 6,
                 title: "Text Formatting in HTML",
                 description: "How text formatting works in HTML", 
-                introduction: "",
-                body: "",
-                codesnippet: "",
-                summary:"",
+                introduction: "Any text that is displayed on a web page can be formatted to emphasize certain aspects of a the text.",
+                body: "Firstly, we are able to bold any part of a text by using either the <b> or <strong> elements. Visually they do the same, but semantically they mean slightly different things. While the <b> tag bolds the text, the <strong> element bolds it while also signaling to screen reader and bots who are analyzing the page. The same goes with italisizing with eith er <i> or <em>.",
+                codesnippet: `
+                <b> & <strong> - bolds any text
+                <i> & <em> - italisizes any text
+                <u> - underlines text
+                `,
+                summary:"There are three main ways you can format your text with bolding, italisizing or underlining. In addition to those there are others, but these three are the most important to know about.",
                 vimeoId: 76979871
             },
             {
                 id: 7,
                 title: "HTML Images",
                 description: "How images are added in HTML pages",
-                introduction: "",
-                body: "",
-                codesnippet: "",
-                summary:"", 
+                introduction: "Images are essential part of almost any webpage. Knowing how to add them to your HTML documents can give you a immense freedom in being able to customize your webpages.",
+                body: "We add images to our HTML pages by using the <img> element along with a src attribute. The src attribute accepts a pathway to the image, which can come from one of two places. The first one is to add a webpage link from somewhere on the internet that holds the image you want to display. The second on is when you add the image document to your code and referance the pathway to the place in the code. This looks like this:",
+                codesnippet: `
+                1. <img src="https://picsum.photos/800/400" />
+                2. <img src"/imagefolder/my-image.jpg" />
+                `,
+                summary:"Images can easily be added anywhere on a webpage by using the <img> element and adding the src attribute.", 
                 vimeoId: 76979871
             },
             {
