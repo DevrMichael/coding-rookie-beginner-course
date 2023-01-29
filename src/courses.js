@@ -305,10 +305,18 @@ const courses = [
                 id: 12,
                 title: "HTML Classes & IDs",
                 description: "Why classes and IDs are in HTML", 
-                introduction: "",
-                body: "",
-                codesnippet: ``,
-                summary:"",
+                introduction: "As your projects get bigger the ability to tag specific elements you want to change becomes increasingly more important. With classes and IDs you can tak any element to reference them in your CSS/styling files.",
+                body: "Classes are tags for groups of elements that should have the same type of styling. You can name many different elements with the same class name. With IDs, however, they are meant to refer to one or a few elements that you want to style. Both of these are extremely valuable in their own way. They are added to elements just the same way as the in-line styles are.",
+                codesnippet: `
+                class - for groups of elements that has the same styling
+                IDs - for specific and unique elements that you want to style or refer to in the CSS file
+
+                Example:
+
+                <h1 class="headerClass">Headline Text</h1>
+                <p id="uniqueId">Unique Id Paragraph</p>
+                `,
+                summary:"Both of these are important to know about, because you will use them a lot when building your projects.",
                 vimeoId: 76979871
             },
             {
