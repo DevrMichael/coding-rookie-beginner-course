@@ -134,40 +134,171 @@ const courses = [
                 id: 8,
                 title: "Tables & Lists in HTML",
                 description: "How tables and list work in HTML", 
-                introduction: "",
-                body: "",
-                codesnippet: "",
-                summary:"",
+                introduction: "Most websites have some form of tables and lists to display data in an organized fashion. They are a necessart part of most website and is an important part of HTML.",
+                body: "Tables are an effective way to organize data by using tables and rows. Lists are an additional way to display data in a way that is readable to the user. Tables are built using the <table> element and the <tr>, <th> and <td> subelements. Lists are organized either by number or bulleted.",
+                codesnippet: `
+                    HTML Tables:
+                    <table> - is the element encapsuling the whole table
+                    <tr> - table rows
+                    <th> - table headers
+                    <td> - table data
+
+                    Example of a simple table with two rows:
+
+                    <table>
+                        <tr>
+                            <th>First table header</th>
+                            <th>Second table header</th>
+                        </tr>
+                        <tr>
+                            <td>First row data</td>
+                            <td>First row data</td>
+                        </tr>
+                        <tr>
+                            <td>Second row data</td>
+                            <td>Second row data</td>
+                        </tr>
+                    </table>
+
+                    HTML Lists:
+                    <ul> - Stands for unordered lists, meaning bulleted
+                    <ol> - Stands for ordered lists, meaning numbered
+                    <li> - Stands for list item, meaning each item in the list
+
+                    Example of an unordered list:
+
+                    <ul>
+                        <li>First bulleted list item</li>
+                        <li>Second bulleted list item</li>
+                        <li>Third bulleted list item</li>
+                        <li>Fourth bulleted list item</li>
+                    </ul>
+
+                    Example of an ordered list:
+                    <ol>
+                        <li>First numbered list item</li>
+                        <li>Second numbered list item</li>
+                        <li>Third numbered list item </li>
+                        <li>Fourth numbered list item</li>
+                    </ol>                    
+                `,
+                summary:"Including tables and lists on your websites give you freedom to display data in organized and customizable ways.",
                 vimeoId: 76979871
             },
             {
                 id: 9,
                 title: "HTML Forms",
                 description: "What forms are in HTML", 
-                introduction: "",
-                body: "",
-                codesnippet: "",
-                summary:"",
+                introduction: "Every website these days have some kind of form embedded in them. Especially if you are going to build commercial websites, it is crucial to that you know how to build forms with HTML",
+                body: "Forms are a neccessary component to most modern websites. Forms are used in so many ways from your newsletters, log in pages, customer feedback, store checkout, etc. On most jobs you will at some point work on building or customizing different forms. Also on job interviews for frontend jobs, it will be an advantage for you if you know HTML forms well. HTML forms consists of four main elements: <form>, <label>, <input> and <button>. The <form> element encapsulates the form, while the <label> adds a field name over the input and finally the button finalizes the form and sends it off.",
+                codesnippet: `
+                <form> - encapsulates the form
+                <label> - labels/names an input field
+                <input> - text field
+                <textarea> - a larger input field for user to type information
+                <br> - HTML that adds a line break/starts a new line
+
+                Examples:
+
+                <form>
+                    <label>Username:</label> <br>
+                    <input> <br>
+                    <label>Password:</label> <br>
+                    <input>
+                    <button>Log in</button>
+                </form>
+                
+                <form>
+                    <label>Customer Feedback:</label> <br>
+                    <textarea>
+                    <button>Send Feedback</button>
+                </form>
+                `,
+                summary:"Forms are a necessary part of any website, and it is worth investing some time learning how to create one thorougly.",
                 vimeoId: 76979871
             },
             {
                 id: 10,
                 title: "Creating a Simple HTML Page from Scratch",
                 description: "Create the first HTML page", 
-                introduction: "",
-                body: "",
-                codesnippet: "",
-                summary:"",
+                introduction: "Now that we have gone through the basic elements of the HTML language let's put it all together and build our first HTML page.",
+                body: "The first element we need to write that encapsulates every HTML document is the <html> tags. Then we add our <head> and <body> section and add whichever element we want the HTML document to include.",
+                codesnippet: `
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>My First HTML Page</title>
+            </head>
+            <body>
+                <div>
+                    <h1>My First HTML Page</h1>
+                    <p>This is my first HTML page.</p>
+                    <img src="https://picsum.photos/200/300" />
+                </div>
+                <div>
+                    <form>
+                        <h2>Sign up for our newsletter!</h2>
+                        <label>Your email:</label>
+                        <input />
+                        <button>Sign me up!</button>
+                    </form>
+                </div>
+                <div>
+                    <table>
+                        <h3>How Long Does it Take to Become a Frontend Developer?</h3>
+                        <tr>
+                            <th>HTML</th>
+                            <th>CSS</th>
+                            <th>Javascript</th>
+                        </tr>
+                        <tr>
+                            <td>Takes two weeks to two months to learn</td>
+                            <td>Takes one - two months to learn</td>
+                            <td>Takes about two months to learn</td>
+                        </tr>
+                    </table> 
+
+                    <h4>Key Elements to Getting the First Frontend Developer Job</h4>
+                    <ul>
+                        <li>Basic understanding of HTML, CSS and Javascript</li>
+                        <li>Building Projects</li>
+                        <li>Learn a Library Built Upon Javascript like React or Vue</li>
+                        <li>Create and polish your Linkedin Profile</li>
+                        <li>Have a Professional Looking Resume</li>
+                    </ul>
+                </div>
+            </body>
+        </html>
+`,
+                summary:"There you have it! You have officially created your first HTML page and are well on your way to becoming a frontend developer!",
                 vimeoId: 76979871
             },
             {
                 id: 11,
                 title: "Styling HTML Elements",
                 description: "How to style HTML elements", 
-                introduction: "",
-                body: "",
-                codesnippet: "",
-                summary:"",
+                introduction: "Next, we are going to learn how to style our HTML elements",
+                body: "There are a few ways we can style our HTML elements. The main ones you'll use quite a bit are changing the text and background color, size and font style. You will also need to align the HTML elements in different places on the page, which you can do with styling. It is most common to keep most of the styling in a seperate CSS file(which we will learn about later), but for this HTML lesson we will learn how to style elements using in-line HTML styling. In-line styles are added inside of HTML elements by writing style followed by the property you want to style and the value. The most common in-line styles that you will use are:",
+                codesnippet: `
+    <element style="color:pink"> - changes the text color
+    <element style="background-color:yellow"> - changes the background color
+    <element style="font-size:18px"> - changes the text size
+    <element style="font-family:Arial"> - changes the font family of the text
+    <element style="text-align:left"> - changes the text position to left, center or right
+
+    You can add styles to any HTML element, for this example we will use the 
+    <p>(paragraph) element.
+    
+    Example: 
+    <p style="color:pink">Pink colored text</p>
+    <p style="background-color:yellow">Yellow background color</p>
+    <p style="font-size:18px">Sets the paragraph text size to 18px</p>
+    <p style="font-family:Arial">Sets the paragraph font family to Arial</p>
+    <p style="text-align:left">Aligns the text in the element to the left side</p>
+                `,
+                summary:"We will learn a lot more about styling HTML elements in the CSS course.",
                 vimeoId: 76979871
             },
             {
@@ -176,7 +307,7 @@ const courses = [
                 description: "Why classes and IDs are in HTML", 
                 introduction: "",
                 body: "",
-                codesnippet: "",
+                codesnippet: ``,
                 summary:"",
                 vimeoId: 76979871
             },
@@ -186,7 +317,7 @@ const courses = [
                 description: "How to add links using anchor tags",
                 introduction: "",
                 body: "",
-                codesnippet: "",
+                codesnippet: ``,
                 summary:"", 
                 vimeoId: 76979871
             },
@@ -196,7 +327,7 @@ const courses = [
                 description: "How to make comments in HTML code", 
                 introduction: "",
                 body: "",
-                codesnippet: "",
+                codesnippet: ``,
                 summary:"",
                 vimeoId: 76979871
             },
@@ -206,7 +337,7 @@ const courses = [
                 description: "Recap of the basics of HTML", 
                 introduction: "",
                 body: "",
-                codesnippet: "",
+                codesnippet: ``,
                 summary:"",
                 vimeoId: 76979871
             },
@@ -224,7 +355,7 @@ const courses = [
             description: "First CSS module", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -234,7 +365,7 @@ const courses = [
             description: "Introduction to what CSS is", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -244,7 +375,7 @@ const courses = [
             description: "How selectors work in CSS", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -254,7 +385,7 @@ const courses = [
             description: "How to set colors using CSS", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -264,7 +395,7 @@ const courses = [
             description: "Explanation of the box model", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -274,7 +405,7 @@ const courses = [
             description: "How padding and margin works in CSS", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -284,7 +415,7 @@ const courses = [
             description: "How to add borders to HTML elements", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -294,7 +425,7 @@ const courses = [
             description: "Why adding height and width can be useful in CSS", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -304,7 +435,7 @@ const courses = [
             description: "How the display property work in CSS", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -314,7 +445,7 @@ const courses = [
             description: "How to style text with CSS", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -324,7 +455,7 @@ const courses = [
             description: "How to change background in CSS", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -334,7 +465,7 @@ const courses = [
             description: "How to adapt your HTML pages to different screen sizes",
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"", 
             vimeoId: 76979871
         },
@@ -344,7 +475,7 @@ const courses = [
             description: "What the z-index is in CSS", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -354,7 +485,7 @@ const courses = [
             description: "How to align elements in CSS", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -364,7 +495,7 @@ const courses = [
             description: "Recap of the basics of CSS", 
             introduction: "",
             body: "",
-            codesnippet: "",
+            codesnippet: ``,
             summary:"",
             vimeoId: 76979871
         },
@@ -381,7 +512,7 @@ const courses = [
         description: "First Javascript module", 
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"",
         vimeoId: 76979871
     },
@@ -391,7 +522,7 @@ const courses = [
         description: "Introduction of Javascript",
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"", 
         vimeoId: 76979871
     },
@@ -401,7 +532,7 @@ const courses = [
         description: "What values are in Javascript", 
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"",
         vimeoId: 76979871
     },
@@ -411,7 +542,7 @@ const courses = [
         description: "How to create variables in Javascript", 
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"",
         vimeoId: 76979871
     },
@@ -421,7 +552,7 @@ const courses = [
         description: "What are operators in Javascript", 
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"",
         vimeoId: 76979871
     },
@@ -431,7 +562,7 @@ const courses = [
         description: "How statements are in Javascript", 
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"",
         vimeoId: 76979871
     },
@@ -441,7 +572,7 @@ const courses = [
         description: "What events do and how to used them in Javascript",
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"", 
         vimeoId: 76979871
     },
@@ -451,7 +582,7 @@ const courses = [
         description: "What are Javascript objects", 
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"",
         vimeoId: 76979871
     },
@@ -461,7 +592,7 @@ const courses = [
         description: "What are Javascript arrays", 
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"",
         vimeoId: 76979871
     },
@@ -471,7 +602,7 @@ const courses = [
         description: "How to use Javascript functions", 
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"",
         vimeoId: 76979871
     },
@@ -481,7 +612,7 @@ const courses = [
         description: "What are methods in Javascript", 
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"",
         vimeoId: 76979871
     },
@@ -491,7 +622,7 @@ const courses = [
         description: "What loops are for in Javascript",
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"", 
         vimeoId: 76979871
     },
@@ -501,7 +632,7 @@ const courses = [
         description: "How to use If statements in Javascript", 
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"",
         vimeoId: 76979871
     },
@@ -511,7 +642,7 @@ const courses = [
         description: "How to use Switch statements in Javascript",
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"", 
         vimeoId: 76979871
     },
@@ -521,7 +652,7 @@ const courses = [
         description: "Recap of the basics of Javascript", 
         introduction: "",
         body: "",
-        codesnippet: "",
+        codesnippet: ``,
         summary:"",
         vimeoId: 76979871
     },
