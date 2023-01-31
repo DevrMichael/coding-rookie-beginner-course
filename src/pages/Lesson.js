@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import Vimeo from "@u-wave/react-vimeo";
 import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
 import Prism from 'prismjs';
-import "prismjs/themes/prism.css"
+import "prismjs/themes/prism-vsc-dark-plus.css"
 
 function Lesson(){
   const { courseId, lessonId } = useParams();
@@ -41,7 +41,7 @@ function Lesson(){
                     {lesson.codesnippet}
                   </code>
                 </pre>
-                {lesson.summary}
+                <p>{lesson.summary}</p>
                 <Vimeo video={lesson.vimeoId} responsive />
               </div>
         </div>
