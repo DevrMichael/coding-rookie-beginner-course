@@ -323,20 +323,26 @@ const courses = [
                 id: 13,
                 title: "HTML Links with Anchor Tags",
                 description: "How to add links using anchor tags",
-                introduction: "",
-                body: "",
-                codesnippet: ``,
-                summary:"", 
+                introduction: "Anchor tags are elements in the HTML language that let us attach links to a URL. They can be used for clicking text, buttons or images.",
+                body: "Anchor tags gives us as programmers the ability to provide our users with ways to navigate around our sites, or to other sites. It is simple to implement by attaching a URL or a pathway in your code to an <a> tag.",
+                codesnippet: `
+                <a href="insert URL here">Link to a URL</a>
+                `,
+                summary:"In most coding project, you will use anchor tags, and they are good to know about for any aspiring web developer.", 
                 vimeoId: 76979871
             },
             {
                 id: 14,
                 title: "Comments on HTML Pages",
                 description: "How to make comments in HTML code", 
-                introduction: "",
-                body: "",
-                codesnippet: ``,
-                summary:"",
+                introduction: "One of the most valuable skills for developers is their ability to communicate. Comments are parts of coding projects that communicate what the code is trying to do to both yourself and other developers on your team.",
+                body: "As a developer you should strive to write increasingly more readable code. However, sometimes writing some comments can be valuable even if you have written the most readable code. Here is how HTML codes are written:",
+                codesnippet: `HTML codes have an opening <!-- tag and a closing --> tag. The comment you want to communicate goes between these tags.
+                
+                Example:
+                <!-- Some comment about your code -->
+                `,
+                summary:"Comments can be a powerful way to communicate what your code is trying to do. Having them makes it easier for you to come back a year after you have written the code and easily understand what it is doing. Also, it allows other developers to read and understand your code.",
                 vimeoId: 76979871
             },
             {
