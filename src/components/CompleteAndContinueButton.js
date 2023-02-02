@@ -6,7 +6,12 @@ function CompleteAndContinueButton(props) {
     const navigate = useNavigate()
     function completeAndContinue () {
         navigate(`/courses/${props.courseId}/lessons/${props.lessonId}`)
-    }
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      };
+
   return (
     <button className="button primary complete btn" onClick={completeAndContinue}>
         Complete and continue

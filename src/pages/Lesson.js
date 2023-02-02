@@ -3,10 +3,10 @@ import courses from "../courses";
 import React, { useEffect } from "react";
 import Vimeo from "@u-wave/react-vimeo";
 import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
-import Prism from 'prismjs';
-import "prismjs/themes/prism-vsc-dark-plus.css"
+import Prism from "prismjs";
+import "prismjs/themes/prism-vsc-dark-plus.css";
 
-function Lesson(){
+function Lesson() {
   const { courseId, lessonId } = useParams();
   const course = courses.find((course) => course.id === parseInt(courseId));
   const lesson = course.lessons.find(
@@ -20,7 +20,7 @@ function Lesson(){
 
   useEffect(() => {
     Prism.highlightAll();
-  },[])
+  }, []);
 
   return (
     <div className="Lesson page">
@@ -32,18 +32,18 @@ function Lesson(){
       </header>
       <div className="Content">
         <div className="posts">
-              <div>
-                <p>{lesson.introduction}</p>
-                <img src="https://picsum.photos/800/400" alt="random-pic" />
-                <p>{lesson.body}</p>
-                <pre className={"language-javascript"}>
-                  <code>
-                    {lesson.codesnippet}
-                  </code>
-                </pre>
-                <p>{lesson.summary}</p>
-                <Vimeo video={lesson.vimeoId} responsive />
-              </div>
+          <div>
+            <p>{lesson.introduction}</p>
+            {lesson.image && <img src={`${lesson.image}`} alt="random-pic" />}
+            <p>{lesson.body}</p>
+            {lesson.codesnippet && (
+              <pre className={"language-javascript"}>
+                <code>{lesson.codesnippet}</code>
+              </pre>
+            )}
+            <p>{lesson.summary}</p>
+            <Vimeo video={lesson.vimeoId} responsive />
+          </div>
         </div>
         <CompleteAndContinueButton
           courseId={courseId}

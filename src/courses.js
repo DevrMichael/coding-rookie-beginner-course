@@ -5,8 +5,14 @@ const courses = [
         description: "Starting from scratch, HTML is the first step to becoming a web developer.",
         lessons: [
             {
+                id: 0,
+                title: 'HTML in 100 seconds',
+                vimeoId: 76979871
+            },
+            {
                 id: 1,
                 title: "Welcome to the HTML course",
+                image: "https://picsum.photos/800/400",
                 description: "First HTML module", 
                 introduction: "The first step to any frontend developers journey is to learn HTML. It is a simple coding language that will give you your first insights to what and how coding looks like. ",
                 body: "Any new coder should spent a few weeks to a couple of months first understanding the basics HTML. In most HTML documents you'll work on there are a lot of repetitive aspects of HTML that you will use, and this course will take you through all of them. Below are the main components or starting blocks of an HTML document. You don't yet need to understand any of this, just take a look and make yourself a little familiar with how the language looks like.",
@@ -30,6 +36,7 @@ const courses = [
             {
                 id: 2,
                 title: "What is HTML",
+                image: "https://picsum.photos/800/400",
                 description: "Short explanation of HTML", 
                 introduction:"HTML stands for Hyper Text Markup Language and is a programming language that decides the structure of web pages. Any website uses components from the HTML language to display text, images and video.",
                 body:"Most modern websites contain three aspects in some form or fashion and that is HTML, CSS & Javascript. The HTML serves as the skeleton, while the CSS provides the meat, clothing and look and the Javascript makes everything dynamic. For this course we will only be looking at learning HTML, while in the next two we'll dive into the two other factions of a website.",
@@ -55,6 +62,7 @@ const courses = [
             {
                 id: 3,
                 title: "The Structure of HTML Pages",
+                image: "https://picsum.photos/800/400",
                 description: "How HTML pages are structured", 
                 introduction: "Every webpage is structured using HTML elements. These elements are the first thing you should know about when learning this language. Overall, there are many different elements that can be used, however there are a small number of them that are used the most. We've already looked at some of them like the <body>, <h1> and <p> elements.",
                 body: "Each HTML element has a specific purpose. The all indicate a part of the HTML that does a specific job. For example, the <p> tag tells the computer that there is a paragraph between those tags. And the <h1> tells the computer to display a header/headline. Here are the top 10 HTML elements that you'll use the most of the time:",
@@ -76,6 +84,7 @@ const courses = [
             {
                 id: 4,
                 title: "HTML Elements & Attributes",
+                image: "https://picsum.photos/800/400",
                 description: "How can you customize HTML elements using attributes?",
                 introduction: "The HTML elements we talked about in the previous lesson are necessary and valuable, but they are also static. Adding attributes to these elements gives you authority of certain aspects of the styles and actions of those elements.",
                 body: "Attributes are add-ons to your elements. Some attributes will give you the ability to style the elements, others will attach links or images. Some attributes are visible, while others are not. Here are the main attributes that you will use in your HTML elements:",
@@ -93,6 +102,7 @@ const courses = [
             {
                 id: 5,
                 title: "Headings & Paragraphs in HTML",
+                image: "https://picsum.photos/800/400",
                 description: "Explanation of headings and paragraphs", 
                 introduction: "Most HTML pages have headings and paragraphs and knowing how to structure your HTML pages with their element tags is one of the first step to know about when learning the language.",
                 body: "Headings have 6 different element tags in HTML. They range from <h1> which is the largest text size to <h6>. <h1> is used for the headlines of any pages, blogposts or articles, while the other tags are used for subsequent headlines. Paragraphs are written within <p> tags and most often will be placed below a heading tag.",
@@ -106,6 +116,7 @@ const courses = [
             {
                 id: 6,
                 title: "Text Formatting in HTML",
+                image: "https://picsum.photos/800/400",
                 description: "How text formatting works in HTML", 
                 introduction: "Any text that is displayed on a web page can be formatted to emphasize certain aspects of a the text.",
                 body: "Firstly, we are able to bold any part of a text by using either the <b> or <strong> elements. Visually they do the same, but semantically they mean slightly different things. While the <b> tag bolds the text, the <strong> element bolds it while also signaling to screen reader and bots who are analyzing the page. The same goes with italisizing with eith er <i> or <em>.",
@@ -120,6 +131,7 @@ const courses = [
             {
                 id: 7,
                 title: "HTML Images",
+                image: "https://picsum.photos/800/400",
                 description: "How images are added in HTML pages",
                 introduction: "Images are essential part of almost any webpage. Knowing how to add them to your HTML documents can give you a immense freedom in being able to customize your webpages.",
                 body: "We add images to our HTML pages by using the <img> element along with a src attribute. The src attribute accepts a pathway to the image, which can come from one of two places. The first one is to add a webpage link from somewhere on the internet that holds the image you want to display. The second on is when you add the image document to your code and referance the pathway to the place in the code. Additionally you would want to add an alt attribute that explains the context of the image. This is important for screen readers, website crawlers and for broken images. This looks like this:",
@@ -133,6 +145,7 @@ const courses = [
             {
                 id: 8,
                 title: "Tables & Lists in HTML",
+                image: "https://picsum.photos/800/400",
                 description: "How tables and list work in HTML", 
                 introduction: "Most websites have some form of tables and lists to display data in an organized fashion. They are a necessart part of most website and is an important part of HTML.",
                 body: "Tables are an effective way to organize data by using tables and rows. Lists are an additional way to display data in a way that is readable to the user. Tables are built using the <table> element and the <tr>, <th> and <td> subelements. Lists are organized either by number or bulleted.",
@@ -188,6 +201,7 @@ const courses = [
             {
                 id: 9,
                 title: "HTML Forms",
+                image: "https://picsum.photos/800/400",
                 description: "What forms are in HTML", 
                 introduction: "Every website these days have some kind of form embedded in them. Especially if you are going to build commercial websites, it is crucial to that you know how to build forms with HTML",
                 body: "Forms are a neccessary component to most modern websites. Forms are used in so many ways from your newsletters, log in pages, customer feedback, store checkout, etc. On most jobs you will at some point work on building or customizing different forms. Also on job interviews for frontend jobs, it will be an advantage for you if you know HTML forms well. HTML forms consists of four main elements: <form>, <label>, <input> and <button>. The <form> element encapsulates the form, while the <label> adds a field name over the input and finally the button finalizes the form and sends it off.",
@@ -220,6 +234,7 @@ const courses = [
             {
                 id: 10,
                 title: "Creating a Simple HTML Page from Scratch",
+                image: "https://picsum.photos/800/400",
                 description: "Create the first HTML page", 
                 introduction: "Now that we have gone through the basic elements of the HTML language let's put it all together and build our first HTML page.",
                 body: "The first element we need to write that encapsulates every HTML document is the <html> tags. Then we add our <head> and <body> section and add whichever element we want the HTML document to include.",
@@ -278,6 +293,7 @@ const courses = [
             {
                 id: 11,
                 title: "Styling HTML Elements",
+                image: "https://picsum.photos/800/400",
                 description: "How to style HTML elements", 
                 introduction: "Next, we are going to learn how to style our HTML elements",
                 body: "There are a few ways we can style our HTML elements. The main ones you'll use quite a bit are changing the text and background color, size and font style. You will also need to align the HTML elements in different places on the page, which you can do with styling. It is most common to keep most of the styling in a seperate CSS file(which we will learn about later), but for this HTML lesson we will learn how to style elements using in-line HTML styling. In-line styles are added inside of HTML elements by writing style followed by the property you want to style and the value. The most common in-line styles that you will use are:",
@@ -304,6 +320,7 @@ const courses = [
             {
                 id: 12,
                 title: "HTML Classes & IDs",
+                image: "https://picsum.photos/800/400",
                 description: "Why classes and IDs are in HTML", 
                 introduction: "As your projects get bigger the ability to tag specific elements you want to change becomes increasingly more important. With classes and IDs you can tak any element to reference them in your CSS/styling files.",
                 body: "Classes are tags for groups of elements that should have the same type of styling. You can name many different elements with the same class name. With IDs, however, they are meant to refer to one or a few elements that you want to style. Both of these are extremely valuable in their own way. They are added to elements just the same way as the in-line styles are.",
@@ -322,6 +339,7 @@ const courses = [
             {
                 id: 13,
                 title: "HTML Links with Anchor Tags",
+                image: "https://picsum.photos/800/400",
                 description: "How to add links using anchor tags",
                 introduction: "Anchor tags are elements in the HTML language that let us attach links to a URL. They can be used for clicking text, buttons or images.",
                 body: "Anchor tags gives us as programmers the ability to provide our users with ways to navigate around our sites, or to other sites. It is simple to implement by attaching a URL or a pathway in your code to an <a> tag.",
@@ -334,6 +352,7 @@ const courses = [
             {
                 id: 14,
                 title: "Comments on HTML Pages",
+                image: "https://picsum.photos/800/400",
                 description: "How to make comments in HTML code", 
                 introduction: "One of the most valuable skills for developers is their ability to communicate. Comments are parts of coding projects that communicate what the code is trying to do to both yourself and other developers on your team.",
                 body: "As a developer you should strive to write increasingly more readable code. However, sometimes writing some comments can be valuable even if you have written the most readable code. Here is how HTML codes are written:",
@@ -348,6 +367,7 @@ const courses = [
             {
                 id: 15,
                 title: "HTML Cheatsheet",
+                image: "https://picsum.photos/800/400",
                 description: "Recap of the basics of HTML", 
                 introduction: "",
                 body: "",
@@ -364,8 +384,14 @@ const courses = [
         description: "Learn everything about styling your HTML pages with CSS.",
         lessons: [
             {
+                id: 0,
+                title: 'CSS in 100 seconds',
+                vimeoId: 76979871
+            },
+            {
             id: 1,
             title: "Welcome to the CSS course",
+            image: "https://picsum.photos/800/400",
             description: "First CSS module", 
             introduction: "",
             body: "",
@@ -376,6 +402,7 @@ const courses = [
         {
             id: 2,
             title: "What is CSS?",
+            image: "https://picsum.photos/800/400",
             description: "Introduction to what CSS is", 
             introduction: "",
             body: "",
@@ -386,6 +413,7 @@ const courses = [
         {
             id: 3,
             title: "CSS Selectors",
+            image: "https://picsum.photos/800/400",
             description: "How selectors work in CSS", 
             introduction: "",
             body: "",
@@ -396,6 +424,7 @@ const courses = [
         {
             id: 4,
             title: "Setting Colors with CSS",
+            image: "https://picsum.photos/800/400",
             description: "How to set colors using CSS", 
             introduction: "",
             body: "",
@@ -406,6 +435,7 @@ const courses = [
         {
             id: 5,
             title: "The Box Model",
+            image: "https://picsum.photos/800/400",
             description: "Explanation of the box model", 
             introduction: "",
             body: "",
@@ -416,6 +446,7 @@ const courses = [
         {
             id: 6,
             title: "Padding & Margin in CSS",
+            image: "https://picsum.photos/800/400",
             description: "How padding and margin works in CSS", 
             introduction: "",
             body: "",
@@ -426,6 +457,7 @@ const courses = [
         {
             id: 7,
             title: "Borders",
+            image: "https://picsum.photos/800/400",
             description: "How to add borders to HTML elements", 
             introduction: "",
             body: "",
@@ -436,6 +468,7 @@ const courses = [
         {
             id: 8,
             title: "Height & Width in CSS",
+            image: "https://picsum.photos/800/400",
             description: "Why adding height and width can be useful in CSS", 
             introduction: "",
             body: "",
@@ -446,6 +479,7 @@ const courses = [
         {
             id: 9,
             title: "The Display Property",
+            image: "https://picsum.photos/800/400",
             description: "How the display property work in CSS", 
             introduction: "",
             body: "",
@@ -456,6 +490,7 @@ const courses = [
         {
             id: 10,
             title: "Styling Text Using CSS",
+            image: "https://picsum.photos/800/400",
             description: "How to style text with CSS", 
             introduction: "",
             body: "",
@@ -466,6 +501,7 @@ const courses = [
         {
             id: 11,
             title: "Customizing the Background with CSS",
+            image: "https://picsum.photos/800/400",
             description: "How to change background in CSS", 
             introduction: "",
             body: "",
@@ -476,6 +512,7 @@ const courses = [
         {
             id: 12,
             title: "Screen Customization & Media Queries",
+            image: "https://picsum.photos/800/400",
             description: "How to adapt your HTML pages to different screen sizes",
             introduction: "",
             body: "",
@@ -486,6 +523,7 @@ const courses = [
         {
             id: 13,
             title: "The Z-Index",
+            image: "https://picsum.photos/800/400",
             description: "What the z-index is in CSS", 
             introduction: "",
             body: "",
@@ -496,6 +534,7 @@ const courses = [
         {
             id: 14,
             title: "CSS Align",
+            image: "https://picsum.photos/800/400",
             description: "How to align elements in CSS", 
             introduction: "",
             body: "",
@@ -506,6 +545,7 @@ const courses = [
         {
             id: 15,
             title: "CSS Cheatsheet",
+            image: "https://picsum.photos/800/400",
             description: "Recap of the basics of CSS", 
             introduction: "",
             body: "",
@@ -521,8 +561,14 @@ const courses = [
     description: "Make your HTML pages dynamic with Javascript programming.",
     lessons: [
         {
+            id: 0,
+            title: 'Javascript in 100 seconds',
+            vimeoId: 76979871
+        },
+        {
         id: 1,
         title: "Welcome to the Javascript course",
+        image: "https://picsum.photos/800/400",
         description: "First Javascript module", 
         introduction: "",
         body: "",
@@ -533,6 +579,7 @@ const courses = [
     {
         id: 2,
         title: "What is Javascript?",
+        image: "https://picsum.photos/800/400",
         description: "Introduction of Javascript",
         introduction: "",
         body: "",
@@ -543,6 +590,7 @@ const courses = [
     {
         id: 3,
         title: "Javascript Values",
+        image: "https://picsum.photos/800/400",
         description: "What values are in Javascript", 
         introduction: "",
         body: "",
@@ -553,6 +601,7 @@ const courses = [
     {
         id: 4,
         title: "Creating Variables",
+        image: "https://picsum.photos/800/400",
         description: "How to create variables in Javascript", 
         introduction: "",
         body: "",
@@ -563,6 +612,7 @@ const courses = [
     {
         id: 5,
         title: "Operators in Javascript",
+        image: "https://picsum.photos/800/400",
         description: "What are operators in Javascript", 
         introduction: "",
         body: "",
@@ -573,6 +623,7 @@ const courses = [
     {
         id: 6,
         title: "Statements in Javascript",
+        image: "https://picsum.photos/800/400",
         description: "How statements are in Javascript", 
         introduction: "",
         body: "",
@@ -583,6 +634,7 @@ const courses = [
     {
         id: 7,
         title: "Events in Javascript",
+        image: "https://picsum.photos/800/400",
         description: "What events do and how to used them in Javascript",
         introduction: "",
         body: "",
@@ -593,6 +645,7 @@ const courses = [
     {
         id: 8,
         title: "Objects in Javascript",
+        image: "https://picsum.photos/800/400",
         description: "What are Javascript objects", 
         introduction: "",
         body: "",
@@ -603,6 +656,7 @@ const courses = [
     {
         id: 9,
         title: "Arrays in Javascript",
+        image: "https://picsum.photos/800/400",
         description: "What are Javascript arrays", 
         introduction: "",
         body: "",
@@ -613,6 +667,7 @@ const courses = [
     {
         id: 10,
         title: "Functions in Javascript",
+        image: "https://picsum.photos/800/400",
         description: "How to use Javascript functions", 
         introduction: "",
         body: "",
@@ -623,6 +678,7 @@ const courses = [
     {
         id: 11,
         title: "Methods in Javascript",
+        image: "https://picsum.photos/800/400",
         description: "What are methods in Javascript", 
         introduction: "",
         body: "",
@@ -633,6 +689,7 @@ const courses = [
     {
         id: 12,
         title: "Loops in Javascript",
+        image: "https://picsum.photos/800/400",
         description: "What loops are for in Javascript",
         introduction: "",
         body: "",
@@ -643,6 +700,7 @@ const courses = [
     {
         id: 13,
         title: "If Statements in Javascript",
+        image: "https://picsum.photos/800/400",
         description: "How to use If statements in Javascript", 
         introduction: "",
         body: "",
@@ -653,6 +711,7 @@ const courses = [
     {
         id: 14,
         title: "Switch Statements in Javascript",
+        image: "https://picsum.photos/800/400",
         description: "How to use Switch statements in Javascript",
         introduction: "",
         body: "",
@@ -663,6 +722,7 @@ const courses = [
     {
         id: 15,
         title: "Javascript Cheatsheet",
+        image: "https://picsum.photos/800/400",
         description: "Recap of the basics of Javascript", 
         introduction: "",
         body: "",
