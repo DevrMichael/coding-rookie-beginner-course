@@ -25,7 +25,6 @@ function App() {
       <main>
         <nav>
               <Link className='button primary' to="/">Home</Link>
-              <Link className='button primary' to="/course">Course</Link>
               <Link className='button primary' to="/login">Login</Link> 
               <button className='button primary' onClick={signUserOut}>Log Out</button>
         </nav>

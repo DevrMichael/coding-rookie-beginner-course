@@ -1,7 +1,10 @@
 :root {
-  --font-primary: Lato,Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  --font-display: "IBM Plex Sans",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  --font-code: "IBM Plex Mono",Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --font-primary: Lato, Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-display: "IBM Plex Sans", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-code: "IBM Plex Mono", Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
   --font-size-xs: 1.15rem;
   --font-size-sm: 1.3rem;
   --font-size-md: 1.5rem;
@@ -16,7 +19,7 @@
   --color-subtle-dark: #777;
   --color-subtle-medium: #eee;
   --color-subtle-light: #f9f9f9;
-  --color-background-code: rgba(122,129,129,0.09);
+  --color-background-code: rgba(122, 129, 129, 0.09);
   --color-button-primary: #29c15b;
   --color-button-primary-contrast: #fff;
   --color-button-secondary: #cdcdd4;
@@ -29,7 +32,7 @@
   --color-incorrect-dark: #d21313;
   --syntax-background: #f7f7f7;
   --syntax-text: #403f53;
-  --syntax-selected-background: rgba(122,129,129,0.17);
+  --syntax-selected-background: rgba(122, 129, 129, 0.17);
   --syntax-comment: #989fb1;
   --syntax-tag: #994cc3;
   --syntax-number: #aa0982;
@@ -48,7 +51,13 @@
   --border-radius: 5px;
 }
 
-html, body {
+@font-face {
+  font-family: "Recoleta";
+  src: url("./fonts/Recoleta-RegularDEMO.otf");
+}
+
+html,
+body {
   font-size: 14px;
   font-family: var(--font-display);
   line-height: var(--line-height);
@@ -59,8 +68,9 @@ a {
   color: inherit;
 }
 
-h1, h2 {
-  font-family: var(--font-primary);
+h1,
+h2 {
+  font-family: "Recoleta";
 }
 
 h1 {
@@ -96,19 +106,51 @@ p {
   margin: 0 auto;
 }
 
-.summary {
-  border: 1px solid var(--color-subtle-medium);
-  border-radius: var(--border-radius);
-  margin: 0 auto 2rem;
+.courseSummary {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.span-col-2 {
+  grid-column: span 2;
+}
+
+.courseNumber {
+  font-size: 5em;
+  line-height: 1px;
+  color: rgb(185, 177, 177);
 }
 
 .summary > div {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: solid rgba(244, 244, 245);
+  border-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.08),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.summary > div:hover{
+  background-color: rgba(238, 238, 238, 0.04);
+  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.38),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
 }
 
 .summary .title {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .summary .title svg {
@@ -129,6 +171,29 @@ p {
   font-size: var(--font-size-sm);
   color: var(--color-subtle-dark);
   margin: 0;
+}
+
+.courseBtn {
+  font-size: 1.5em;
+  background-color: white;
+  padding: 10px 40px;
+  border-radius: 9999px;
+  border: solid rgba(244, 244, 245);
+  border-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.08),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.courseBtn:hover {
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  transition: 0.3s;
 }
 
 .Lesson header,
@@ -153,7 +218,7 @@ p {
   font-family: var(--font-primary);
   font-weight: 700;
   border-radius: var(--border-radius);
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
   cursor: pointer;
 }
 
@@ -166,14 +231,14 @@ p {
   font-family: var(--font-primary);
   font-weight: 700;
   border-radius: var(--border-radius);
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
   cursor: pointer;
   text-decoration: none;
   line-height: 1.2;
 }
 
 .button.primary.complete.btn {
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 .button.primary:hover {

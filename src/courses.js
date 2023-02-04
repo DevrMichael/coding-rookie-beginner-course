@@ -1,7 +1,7 @@
 const courses = [
     {
         id: 1,
-        title: "HTML / Hyper Text Markup Language",
+        title: "HTML",
         description: "Starting from scratch, HTML is the first step to becoming a web developer.",
         lessons: [
             {
@@ -380,7 +380,7 @@ const courses = [
     },
     {
         id: 2,
-        title: "CSS / Cascading Style Sheet",
+        title: "CSS",
         description: "Learn everything about styling your HTML pages with CSS.",
         lessons: [
             {
