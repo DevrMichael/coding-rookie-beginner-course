@@ -104,7 +104,54 @@ const courses = [
                 </html>
                     `,
                 summary: "HTML is an important language where you code the raw content of the page, while CSS & Javascript makes the content even more stylish and dynamic. Let's dive deeper into the structure of HTML pages.",
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 3,
@@ -126,7 +173,54 @@ const courses = [
                     <button> - for buttons.
                     `,
                 summary:"Each HTML element serves a very specific purpose. As you'll get better and gain more experience with coding HTML pages, these will become very intuitive to understand and use in your projects.",
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 4,
@@ -144,7 +238,54 @@ const courses = [
                 class/id - elements can be in customizable classes or ids
                 `,
                 summary:"Attributes are add-ons to HTML elements that provides additional context for that element. They are sometimes necessary(like with the src attribute and <img> element) and other times they are voluntary.", 
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 5,
@@ -158,7 +299,54 @@ const courses = [
                 <p> element tags are used for paragraphs.
                 `,
                 summary:"Most websites have some form of text on them and a lot of them are structured using headlines followed by paragraph tags.",
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 6,
@@ -173,7 +361,54 @@ const courses = [
                 <u> - underlines text
                 `,
                 summary:"There are three main ways you can format your text with bolding, italisizing or underlining. In addition to those there are others, but these three are the most important to know about.",
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 7,
@@ -187,7 +422,54 @@ const courses = [
         2. <img src"/imagefolder/my-image.jpg" alt="explaining the image context"/>
                 `,
                 summary:"Images can easily be added anywhere on a webpage by using the <img> element and adding the src attribute.", 
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 8,
@@ -243,7 +525,54 @@ const courses = [
                     </ol>                    
                 `,
                 summary:"Including tables and lists on your websites give you freedom to display data in organized and customizable ways.",
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 9,
@@ -276,7 +605,54 @@ const courses = [
                 </form>
                 `,
                 summary:"Forms are a necessary part of any website, and it is worth investing some time learning how to create one thorougly.",
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 10,
@@ -335,7 +711,54 @@ const courses = [
         </html>
 `,
                 summary:"There you have it! You have officially created your first HTML page and are well on your way to becoming a frontend developer!",
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 11,
@@ -362,7 +785,54 @@ const courses = [
     <p style="text-align:left">Aligns the text in the element to the left side</p>
                 `,
                 summary:"We will learn a lot more about styling HTML elements in the CSS course.",
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 12,
@@ -381,7 +851,54 @@ const courses = [
                 <p id="uniqueId">Unique Id Paragraph</p>
                 `,
                 summary:"Both of these are important to know about, because you will use them a lot when building your projects.",
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 13,
@@ -394,7 +911,54 @@ const courses = [
                 <a href="insert URL here">Link to a URL</a>
                 `,
                 summary:"In most coding project, you will use anchor tags, and they are good to know about for any aspiring web developer.", 
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 14,
@@ -409,7 +973,54 @@ const courses = [
                 <!-- Some comment about your code -->
                 `,
                 summary:"Comments can be a powerful way to communicate what your code is trying to do. Having them makes it easier for you to come back a year after you have written the code and easily understand what it is doing. Also, it allows other developers to read and understand your code.",
-                vimeoId: 76979871
+                vimeoId: 76979871,
+                quizQuestions: [
+                    {
+                      text: "What is the capital of America?",
+                      options: [
+                        { id: 0, text: "New York City", isCorrect: false },
+                        { id: 1, text: "Miami", isCorrect: false },
+                        { id: 2, text: "Santa Fe", isCorrect: false },
+                        { id: 3, text: "Washington DC", isCorrect: true },
+                      ],
+                    },
+                    {
+                      text: "What year was the Constitution of America written?",
+                      options: [
+                        { id: 0, text: "1787", isCorrect: true },
+                        { id: 1, text: "1776", isCorrect: false },
+                        { id: 2, text: "1774", isCorrect: false },
+                        { id: 3, text: "1826", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Who was the second president of the US?",
+                      options: [
+                        { id: 0, text: "John Adams", isCorrect: true },
+                        { id: 1, text: "Paul Revere", isCorrect: false },
+                        { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                        { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "What is the largest state in the US?",
+                      options: [
+                        { id: 0, text: "California", isCorrect: false },
+                        { id: 1, text: "Alaska", isCorrect: true },
+                        { id: 2, text: "Texas", isCorrect: false },
+                        { id: 3, text: "Montana", isCorrect: false },
+                      ],
+                    },
+                    {
+                      text: "Which of the following countries DO NOT border the US?",
+                      options: [
+                        { id: 0, text: "Canada", isCorrect: false },
+                        { id: 1, text: "Russia", isCorrect: true },
+                        { id: 2, text: "Cuba", isCorrect: true },
+                        { id: 3, text: "Mexico", isCorrect: false },
+                      ],
+                    },
+                  ]
             },
             {
                 id: 15,
@@ -444,7 +1055,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 2,
@@ -455,7 +1113,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 3,
@@ -466,7 +1171,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 4,
@@ -477,7 +1229,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 5,
@@ -488,7 +1287,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 6,
@@ -499,7 +1345,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 7,
@@ -510,7 +1403,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 8,
@@ -521,7 +1461,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 9,
@@ -532,7 +1519,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 10,
@@ -543,7 +1577,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 11,
@@ -554,7 +1635,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 12,
@@ -565,7 +1693,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"", 
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 13,
@@ -576,7 +1751,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 14,
@@ -587,7 +1809,54 @@ const courses = [
             body: "",
             codesnippet: ``,
             summary:"",
-            vimeoId: 76979871
+            vimeoId: 76979871,
+            quizQuestions: [
+                {
+                  text: "What is the capital of America?",
+                  options: [
+                    { id: 0, text: "New York City", isCorrect: false },
+                    { id: 1, text: "Miami", isCorrect: false },
+                    { id: 2, text: "Santa Fe", isCorrect: false },
+                    { id: 3, text: "Washington DC", isCorrect: true },
+                  ],
+                },
+                {
+                  text: "What year was the Constitution of America written?",
+                  options: [
+                    { id: 0, text: "1787", isCorrect: true },
+                    { id: 1, text: "1776", isCorrect: false },
+                    { id: 2, text: "1774", isCorrect: false },
+                    { id: 3, text: "1826", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Who was the second president of the US?",
+                  options: [
+                    { id: 0, text: "John Adams", isCorrect: true },
+                    { id: 1, text: "Paul Revere", isCorrect: false },
+                    { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                    { id: 3, text: "Benjamin Franklin", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "What is the largest state in the US?",
+                  options: [
+                    { id: 0, text: "California", isCorrect: false },
+                    { id: 1, text: "Alaska", isCorrect: true },
+                    { id: 2, text: "Texas", isCorrect: false },
+                    { id: 3, text: "Montana", isCorrect: false },
+                  ],
+                },
+                {
+                  text: "Which of the following countries DO NOT border the US?",
+                  options: [
+                    { id: 0, text: "Canada", isCorrect: false },
+                    { id: 1, text: "Russia", isCorrect: true },
+                    { id: 2, text: "Cuba", isCorrect: true },
+                    { id: 3, text: "Mexico", isCorrect: false },
+                  ],
+                },
+              ]
         },
         {
             id: 15,
@@ -621,7 +1890,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"",
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 2,
@@ -632,7 +1948,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"", 
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 3,
@@ -643,7 +2006,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"",
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 4,
@@ -654,7 +2064,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"",
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 5,
@@ -665,7 +2122,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"",
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 6,
@@ -676,7 +2180,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"",
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 7,
@@ -687,7 +2238,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"", 
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 8,
@@ -698,7 +2296,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"",
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 9,
@@ -709,7 +2354,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"",
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 10,
@@ -720,7 +2412,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"",
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 11,
@@ -731,7 +2470,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"",
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 12,
@@ -742,7 +2528,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"", 
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 13,
@@ -753,7 +2586,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"",
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 14,
@@ -764,7 +2644,54 @@ const courses = [
         body: "",
         codesnippet: ``,
         summary:"", 
-        vimeoId: 76979871
+        vimeoId: 76979871,
+        quizQuestions: [
+            {
+              text: "What is the capital of America?",
+              options: [
+                { id: 0, text: "New York City", isCorrect: false },
+                { id: 1, text: "Miami", isCorrect: false },
+                { id: 2, text: "Santa Fe", isCorrect: false },
+                { id: 3, text: "Washington DC", isCorrect: true },
+              ],
+            },
+            {
+              text: "What year was the Constitution of America written?",
+              options: [
+                { id: 0, text: "1787", isCorrect: true },
+                { id: 1, text: "1776", isCorrect: false },
+                { id: 2, text: "1774", isCorrect: false },
+                { id: 3, text: "1826", isCorrect: false },
+              ],
+            },
+            {
+              text: "Who was the second president of the US?",
+              options: [
+                { id: 0, text: "John Adams", isCorrect: true },
+                { id: 1, text: "Paul Revere", isCorrect: false },
+                { id: 2, text: "Thomas Jefferson", isCorrect: false },
+                { id: 3, text: "Benjamin Franklin", isCorrect: false },
+              ],
+            },
+            {
+              text: "What is the largest state in the US?",
+              options: [
+                { id: 0, text: "California", isCorrect: false },
+                { id: 1, text: "Alaska", isCorrect: true },
+                { id: 2, text: "Texas", isCorrect: false },
+                { id: 3, text: "Montana", isCorrect: false },
+              ],
+            },
+            {
+              text: "Which of the following countries DO NOT border the US?",
+              options: [
+                { id: 0, text: "Canada", isCorrect: false },
+                { id: 1, text: "Russia", isCorrect: true },
+                { id: 2, text: "Cuba", isCorrect: true },
+                { id: 3, text: "Mexico", isCorrect: false },
+              ],
+            },
+          ]
     },
     {
         id: 15,

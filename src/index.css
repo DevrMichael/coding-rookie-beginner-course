@@ -173,6 +173,12 @@ p {
   margin: 0;
 }
 
+.quizBtns {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .courseBtn {
   font-size: 1.5em;
   background-color: white;

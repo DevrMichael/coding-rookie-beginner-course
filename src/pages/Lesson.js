@@ -5,6 +5,7 @@ import Vimeo from "@u-wave/react-vimeo";
 import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
 import Prism from "prismjs";
 import "prismjs/themes/prism-vsc-dark-plus.css";
+import GoToQuizButton from "../components/GoToQuizButton";
 
 function Lesson() {
   const { courseId, lessonId } = useParams();
@@ -49,6 +50,10 @@ function Lesson() {
           courseId={courseId}
           lessonId={nextLessonId()}
         />
+        {lesson.quizQuestions && <GoToQuizButton
+          courseId={courseId}
+          lessonId={lessonId}
+        />}
       </div>
     </div>
   );
