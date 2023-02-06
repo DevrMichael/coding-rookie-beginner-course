@@ -7,6 +7,7 @@ import Login from './pages/Login'
 import { signOut } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
 import { auth } from './firebase-config'
+import Quiz from './components/Quiz'
 
 function App() {
   const [isAuth, setIsAuth] = useState(false)
@@ -44,6 +45,10 @@ function App() {
           <Route 
             path="/login"
             element={<Login setIsAuth={setIsAuth} />}
+          />
+          <Route 
+            path="/courses/:courseId/lessons/:lessonId/quiz"
+            element={<Quiz />}
           />
         </Routes>
       </main>
