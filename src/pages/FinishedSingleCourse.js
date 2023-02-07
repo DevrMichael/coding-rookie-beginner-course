@@ -8,11 +8,13 @@ function FinishedSingleCourse() {
   const course = courses.find((course) => course.id === parseInt(courseId));
 
   return (
-    <>
-      <h1>Congratulations!</h1>
-      <h2>You completed the {course.title} course!</h2>
-      {courseId < 3 && <GoToNextCourse courseId={courseId}/>}
-    </>
+    <div className="summary">
+      <div>
+        <h1>Congratulations!</h1>
+        <h2>You completed the {course.title} course!</h2>
+        {courseId < 3 && <GoToNextCourse courseId={courseId} />}
+      </div>
+    </div>
   );
 }
 
