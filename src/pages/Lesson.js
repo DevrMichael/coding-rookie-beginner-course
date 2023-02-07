@@ -7,6 +7,7 @@ import Prism from "prismjs";
 import "prismjs/themes/prism-vsc-dark-plus.css";
 import GoToQuizButton from "../components/GoToQuizButton";
 import GoToPreviousButton from "../components/GoToPreviousButton";
+import CompleteCourse from "../components/CompleteCourse"
 
 function Lesson() {
   const { courseId, lessonId } = useParams();
@@ -55,10 +56,10 @@ function Lesson() {
         <div className="lessonNavigateBtns">
           <div className="newLessonBtns">
             {lessonId > 0 && <GoToPreviousButton courseId={courseId} lessonId={prevLessonId()} />}
-            <CompleteAndContinueButton
+            {lessonId < 15 ? <CompleteAndContinueButton
               courseId={courseId}
               lessonId={nextLessonId()}
-            />
+            /> : <CompleteCourse courseId={courseId}/>}
           </div>
           <div className="goToQuizBtn">
             {lesson.quizQuestions && (
