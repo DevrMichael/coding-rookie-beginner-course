@@ -6,6 +6,7 @@ import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
 import Prism from "prismjs";
 import "prismjs/themes/prism-vsc-dark-plus.css";
 import GoToQuizButton from "../components/GoToQuizButton";
+import GoToPreviousButton from "../components/GoToPreviousButton";
 
 function Lesson() {
   const { courseId, lessonId } = useParams();
@@ -14,6 +15,11 @@ function Lesson() {
     (lesson) => lesson.id === parseInt(lessonId)
   );
   const nextLessonId = () => {
+    const currentIndex = course.lessons.indexOf(lesson);
+    const nextIndex = (currentIndex + 1) % course.lessons.length;
+    return course.lessons[nextIndex].id;
+  };
+  const prevLessonId = () => {
     const currentIndex = course.lessons.indexOf(lesson);
     const nextIndex = (currentIndex + 1) % course.lessons.length;
     return course.lessons[nextIndex].id;
@@ -29,7 +35,7 @@ function Lesson() {
         <p>
           <Link to={"/courses/" + course.id}>Back to {course.title}</Link>
         </p>
-        <h1>{lesson.title}</h1>
+        <h1>{lessonId > 0 ? lessonId + '. ' + lesson.title : lesson.title}</h1>
       </header>
       <div className="Content">
         <div className="posts">
@@ -46,14 +52,20 @@ function Lesson() {
             <Vimeo video={lesson.vimeoId} responsive />
           </div>
         </div>
-        <CompleteAndContinueButton
-          courseId={courseId}
-          lessonId={nextLessonId()}
-        />
-        {lesson.quizQuestions && <GoToQuizButton
-          courseId={courseId}
-          lessonId={lessonId}
-        />}
+        <div className="lessonNavigateBtns">
+          <div className="newLessonBtns">
+            {lessonId > 0 && <GoToPreviousButton courseId={courseId} lessonId={prevLessonId()} />}
+            <CompleteAndContinueButton
+              courseId={courseId}
+              lessonId={nextLessonId()}
+            />
+          </div>
+          <div className="goToQuizBtn">
+            {lesson.quizQuestions && (
+              <GoToQuizButton courseId={courseId} lessonId={lessonId} />
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );

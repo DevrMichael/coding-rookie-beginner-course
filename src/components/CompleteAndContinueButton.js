@@ -14,7 +14,7 @@ function CompleteAndContinueButton(props) {
 
   return (
     <button className="button primary complete btn" onClick={completeAndContinue}>
-        Complete and continue
+       Next Lesson
     </button>
   )
 }
