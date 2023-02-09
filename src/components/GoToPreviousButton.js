@@ -2,18 +2,19 @@ import { useNavigate } from "react-router-dom";
 
 import React from "react";
 
-function GoToPreviousButton(props) {
+function GoToPreviousButton({courseId, lessonId, setActiveButton}) {
   const navigate = useNavigate();
   function goToPrevious() {
-    if ((props.lessonId - 1) === 1) {
-      navigate(`/courses/${props.courseId}/lessons/0`);
+    if ((lessonId - 1) === 1) {
+      navigate(`/courses/${courseId}/lessons/0`);
     } else {
-      navigate(`/courses/${props.courseId}/lessons/${props.lessonId}`);
+      navigate(`/courses/${courseId}/lessons/${lessonId}`);
     }
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
+    setActiveButton(lessonId)
   }
 
   return (

@@ -1,6 +1,6 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import courses from "../courses";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Vimeo from "@u-wave/react-vimeo";
 import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
 import Prism from "prismjs";
@@ -32,12 +32,25 @@ function Lesson() {
 
   const navigate = useNavigate();
 
+  const [activeButton, setActiveButton] = useState(null);
+
   return (
     <div className="Lesson">
       <div className="lesson__side-bar">
-      {course.lessons.map((lesson) => (
-<button onClick={() => navigate('/courses/'+ course.id + '/lessons/' + lesson.id)} to={`courses/${course}/lessons/${lesson}`} className="courseBtn"> {lesson.title} </button>
-            ))}
+        {course.lessons.map((lesson) => (
+          <button
+            onClick={() => {
+              navigate("/courses/" + course.id + "/lessons/" + lesson.id);
+              setActiveButton(lesson.id);
+            }}
+            to={`courses/${course}/lessons/${lesson}`}
+            className={`side-bar__btns ${
+              activeButton === lesson.id ? "side-bar__active" : ""
+            }`}
+          >
+            {lesson.id !== 0 && lesson.id + "."} {lesson.sidebar_title}{" "}
+          </button>
+        ))}
       </div>
       <div className="Lesson page">
         <div className="lesson__content">
@@ -70,12 +83,14 @@ function Lesson() {
               <div className="newLessonBtns">
                 {lessonId > 0 && (
                   <GoToPreviousButton
+                    setActiveButton={setActiveButton}
                     courseId={courseId}
                     lessonId={prevLessonId()}
                   />
                 )}
                 {lessonId < 15 ? (
                   <CompleteAndContinueButton
+                    setActiveButton={setActiveButton}
                     courseId={courseId}
                     lessonId={nextLessonId()}
                   />

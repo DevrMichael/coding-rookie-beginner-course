@@ -2,14 +2,15 @@ import { useNavigate } from "react-router-dom";
 
 import React from 'react'
 
-function CompleteAndContinueButton(props) {
+function CompleteAndContinueButton({courseId, lessonId, setActiveButton}) {
     const navigate = useNavigate()
     function completeAndContinue () {
-        navigate(`/courses/${props.courseId}/lessons/${props.lessonId}`)
+        navigate(`/courses/${courseId}/lessons/${lessonId}`)
         window.scrollTo({
           top: 0,
           behavior: 'smooth',
         });
+        setActiveButton(lessonId)
       };
 
   return (

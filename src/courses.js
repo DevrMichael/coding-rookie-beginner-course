@@ -7,11 +7,13 @@ const courses = [
             {
                 id: 0,
                 title: 'HTML in 100 seconds',
+                sidebar_title: "HTML in 100 seconds",
                 vimeoId: 76979871
             },
             {
                 id: 1,
                 title: "Welcome to the HTML course",
+                sidebar_title: "Introduction",
                 image: "https://picsum.photos/800/400",
                 description: "First HTML module", 
                 introduction: "The first step to any frontend developers journey is to learn HTML. It is a simple coding language that will give you your first insights to what and how coding looks like. ",
@@ -82,7 +84,8 @@ const courses = [
             },
             {
                 id: 2,
-                title: "What is HTML",
+                title: "What is HTML?",
+                sidebar_title: "What is HTML?",
                 image: "https://picsum.photos/800/400",
                 description: "Short explanation of HTML", 
                 introduction:"HTML stands for Hyper Text Markup Language and is a programming language that decides the structure of web pages. Any website uses components from the HTML language to display text, images and video.",
@@ -156,6 +159,7 @@ const courses = [
             {
                 id: 3,
                 title: "The Structure of HTML Pages",
+                sidebar_title: "HTML Pages Structure",
                 image: "https://picsum.photos/800/400",
                 description: "How HTML pages are structured", 
                 introduction: "Every webpage is structured using HTML elements. These elements are the first thing you should know about when learning this language. Overall, there are many different elements that can be used, however there are a small number of them that are used the most. We've already looked at some of them like the <body>, <h1> and <p> elements.",
@@ -225,6 +229,7 @@ const courses = [
             {
                 id: 4,
                 title: "HTML Elements & Attributes",
+                sidebar_title: "HTML Attributes",
                 image: "https://picsum.photos/800/400",
                 description: "How can you customize HTML elements using attributes?",
                 introduction: "The HTML elements we talked about in the previous lesson are necessary and valuable, but they are also static. Adding attributes to these elements gives you authority of certain aspects of the styles and actions of those elements.",
@@ -290,6 +295,7 @@ const courses = [
             {
                 id: 5,
                 title: "Headings & Paragraphs in HTML",
+                sidebar_title: "Headings & Paragraphs",
                 image: "https://picsum.photos/800/400",
                 description: "Explanation of headings and paragraphs", 
                 introduction: "Most HTML pages have headings and paragraphs and knowing how to structure your HTML pages with their element tags is one of the first step to know about when learning the language.",
@@ -351,6 +357,7 @@ const courses = [
             {
                 id: 6,
                 title: "Text Formatting in HTML",
+                sidebar_title: "Text Formatting",
                 image: "https://picsum.photos/800/400",
                 description: "How text formatting works in HTML", 
                 introduction: "Any text that is displayed on a web page can be formatted to emphasize certain aspects of a the text.",
@@ -413,6 +420,7 @@ const courses = [
             {
                 id: 7,
                 title: "HTML Images",
+                sidebar_title: "HTML Images",
                 image: "https://picsum.photos/800/400",
                 description: "How images are added in HTML pages",
                 introduction: "Images are essential part of almost any webpage. Knowing how to add them to your HTML documents can give you a immense freedom in being able to customize your webpages.",
@@ -474,6 +482,7 @@ const courses = [
             {
                 id: 8,
                 title: "Tables & Lists in HTML",
+                sidebar_title: "Tables & Lists",
                 image: "https://picsum.photos/800/400",
                 description: "How tables and list work in HTML", 
                 introduction: "Most websites have some form of tables and lists to display data in an organized fashion. They are a necessart part of most website and is an important part of HTML.",
@@ -577,6 +586,7 @@ const courses = [
             {
                 id: 9,
                 title: "HTML Forms",
+                sidebar_title: "HTML Forms",
                 image: "https://picsum.photos/800/400",
                 description: "What forms are in HTML", 
                 introduction: "Every website these days have some kind of form embedded in them. Especially if you are going to build commercial websites, it is crucial to that you know how to build forms with HTML",
@@ -657,6 +667,7 @@ const courses = [
             {
                 id: 10,
                 title: "Creating a Simple HTML Page from Scratch",
+                sidebar_title: "Creating a New Page",
                 image: "https://picsum.photos/800/400",
                 description: "Create the first HTML page", 
                 introduction: "Now that we have gone through the basic elements of the HTML language let's put it all together and build our first HTML page.",
@@ -764,7 +775,8 @@ const courses = [
                 id: 11,
                 title: "Styling HTML Elements",
                 image: "https://picsum.photos/800/400",
-                description: "How to style HTML elements", 
+                description: "How to style HTML elements",
+                sidebar_title: "Styling Elements",
                 introduction: "Next, we are going to learn how to style our HTML elements",
                 body: "There are a few ways we can style our HTML elements. The main ones you'll use quite a bit are changing the text and background color, size and font style. You will also need to align the HTML elements in different places on the page, which you can do with styling. It is most common to keep most of the styling in a seperate CSS file(which we will learn about later), but for this HTML lesson we will learn how to style elements using in-line HTML styling. In-line styles are added inside of HTML elements by writing style followed by the property you want to style and the value. The most common in-line styles that you will use are:",
                 codesnippet: `
@@ -837,6 +849,7 @@ const courses = [
             {
                 id: 12,
                 title: "HTML Classes & IDs",
+                sidebar_title: "Classes & IDs",
                 image: "https://picsum.photos/800/400",
                 description: "Why classes and IDs are in HTML", 
                 introduction: "As your projects get bigger the ability to tag specific elements you want to change becomes increasingly more important. With classes and IDs you can tak any element to reference them in your CSS/styling files.",
@@ -903,6 +916,7 @@ const courses = [
             {
                 id: 13,
                 title: "HTML Links with Anchor Tags",
+                sidebar_title: "Anchor Tags",
                 image: "https://picsum.photos/800/400",
                 description: "How to add links using anchor tags",
                 introduction: "Anchor tags are elements in the HTML language that let us attach links to a URL. They can be used for clicking text, buttons or images.",
@@ -963,6 +977,7 @@ const courses = [
             {
                 id: 14,
                 title: "Comments on HTML Pages",
+                sidebar_title: "HTML Comments",
                 image: "https://picsum.photos/800/400",
                 description: "How to make comments in HTML code", 
                 introduction: "One of the most valuable skills for developers is their ability to communicate. Comments are parts of coding projects that communicate what the code is trying to do to both yourself and other developers on your team.",
@@ -1025,6 +1040,7 @@ const courses = [
             {
                 id: 15,
                 title: "HTML Cheatsheet",
+                sidebar_title: "Cheatsheet",
                 image: "https://picsum.photos/800/400",
                 description: "Recap of the basics of HTML", 
                 introduction: "",
