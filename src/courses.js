@@ -1060,11 +1060,13 @@ const courses = [
             {
                 id: 0,
                 title: 'CSS in 100 seconds',
+                sidebar_title: "CSS in 100 seconds",
                 vimeoId: 76979871
             },
             {
             id: 1,
             title: "Welcome to the CSS course",
+            sidebar_title: "CSS Introduction",
             image: "https://picsum.photos/800/400",
             description: "First CSS module", 
             introduction: "",
@@ -1123,6 +1125,7 @@ const courses = [
         {
             id: 2,
             title: "What is CSS?",
+            sidebar_title: "What is CSS?",
             image: "https://picsum.photos/800/400",
             description: "Introduction to what CSS is", 
             introduction: "",
@@ -1181,6 +1184,7 @@ const courses = [
         {
             id: 3,
             title: "CSS Selectors",
+            sidebar_title: "CSS Selectors",
             image: "https://picsum.photos/800/400",
             description: "How selectors work in CSS", 
             introduction: "",
@@ -1239,6 +1243,7 @@ const courses = [
         {
             id: 4,
             title: "Setting Colors with CSS",
+            sidebar_title: "CSS Colors",
             image: "https://picsum.photos/800/400",
             description: "How to set colors using CSS", 
             introduction: "",
@@ -1297,6 +1302,7 @@ const courses = [
         {
             id: 5,
             title: "The Box Model",
+            sidebar_title: "The Box Model",
             image: "https://picsum.photos/800/400",
             description: "Explanation of the box model", 
             introduction: "",
@@ -1355,6 +1361,7 @@ const courses = [
         {
             id: 6,
             title: "Padding & Margin in CSS",
+            sidebar_title: "Padding & Margin",
             image: "https://picsum.photos/800/400",
             description: "How padding and margin works in CSS", 
             introduction: "",
@@ -1413,6 +1420,7 @@ const courses = [
         {
             id: 7,
             title: "Borders",
+            sidebar_title: "Borders",
             image: "https://picsum.photos/800/400",
             description: "How to add borders to HTML elements", 
             introduction: "",
@@ -1471,6 +1479,7 @@ const courses = [
         {
             id: 8,
             title: "Height & Width in CSS",
+            sidebar_title: "Height & Width",
             image: "https://picsum.photos/800/400",
             description: "Why adding height and width can be useful in CSS", 
             introduction: "",
@@ -1529,6 +1538,7 @@ const courses = [
         {
             id: 9,
             title: "The Display Property",
+            sidebar_title: "The Display Property",
             image: "https://picsum.photos/800/400",
             description: "How the display property work in CSS", 
             introduction: "",
@@ -1587,6 +1597,7 @@ const courses = [
         {
             id: 10,
             title: "Styling Text Using CSS",
+            sidebar_title: "Styling Text",
             image: "https://picsum.photos/800/400",
             description: "How to style text with CSS", 
             introduction: "",
@@ -1645,6 +1656,7 @@ const courses = [
         {
             id: 11,
             title: "Customizing the Background with CSS",
+            sidebar_title: "Customizing Backgrounds",
             image: "https://picsum.photos/800/400",
             description: "How to change background in CSS", 
             introduction: "",
@@ -1703,6 +1715,7 @@ const courses = [
         {
             id: 12,
             title: "Screen Customization & Media Queries",
+            sidebar_title: "Screen Customization",
             image: "https://picsum.photos/800/400",
             description: "How to adapt your HTML pages to different screen sizes",
             introduction: "",
@@ -1761,6 +1774,7 @@ const courses = [
         {
             id: 13,
             title: "The Z-Index",
+            sidebar_title: "Z-Index",
             image: "https://picsum.photos/800/400",
             description: "What the z-index is in CSS", 
             introduction: "",
@@ -1819,6 +1833,7 @@ const courses = [
         {
             id: 14,
             title: "CSS Align",
+            sidebar_title: "CSS Align",
             image: "https://picsum.photos/800/400",
             description: "How to align elements in CSS", 
             introduction: "",
@@ -1877,6 +1892,7 @@ const courses = [
         {
             id: 15,
             title: "CSS Cheatsheet",
+            sidebar_title: "CSS Cheatsheet",
             image: "https://picsum.photos/800/400",
             description: "Recap of the basics of CSS", 
             introduction: "",
@@ -1895,11 +1911,13 @@ const courses = [
         {
             id: 0,
             title: 'Javascript in 100 seconds',
+            sidebar_title: "Javascript in 100 seconds",
             vimeoId: 76979871
         },
         {
         id: 1,
         title: "Welcome to the Javascript course",
+        sidebar_title: "Javascript Introduction",
         image: "https://picsum.photos/800/400",
         description: "First Javascript module", 
         introduction: "",
@@ -1958,6 +1976,7 @@ const courses = [
     {
         id: 2,
         title: "What is Javascript?",
+        sidebar_title: "What is Javascript?",
         image: "https://picsum.photos/800/400",
         description: "Introduction of Javascript",
         introduction: "",
@@ -2016,6 +2035,7 @@ const courses = [
     {
         id: 3,
         title: "Javascript Values",
+        sidebar_title: "Javascript Values",
         image: "https://picsum.photos/800/400",
         description: "What values are in Javascript", 
         introduction: "",
@@ -2074,6 +2094,7 @@ const courses = [
     {
         id: 4,
         title: "Creating Variables",
+        sidebar_title: "Creating Variables",
         image: "https://picsum.photos/800/400",
         description: "How to create variables in Javascript", 
         introduction: "",
@@ -2132,6 +2153,7 @@ const courses = [
     {
         id: 5,
         title: "Operators in Javascript",
+        sidebar_title: "Operators",
         image: "https://picsum.photos/800/400",
         description: "What are operators in Javascript", 
         introduction: "",
@@ -2190,6 +2212,7 @@ const courses = [
     {
         id: 6,
         title: "Statements in Javascript",
+        sidebar_title: "Writing Statements",
         image: "https://picsum.photos/800/400",
         description: "How statements are in Javascript", 
         introduction: "",
@@ -2248,6 +2271,7 @@ const courses = [
     {
         id: 7,
         title: "Events in Javascript",
+        sidebar_title: "Events",
         image: "https://picsum.photos/800/400",
         description: "What events do and how to used them in Javascript",
         introduction: "",
@@ -2306,6 +2330,7 @@ const courses = [
     {
         id: 8,
         title: "Objects in Javascript",
+        sidebar_title: "Objects",
         image: "https://picsum.photos/800/400",
         description: "What are Javascript objects", 
         introduction: "",
@@ -2364,6 +2389,7 @@ const courses = [
     {
         id: 9,
         title: "Arrays in Javascript",
+        sidebar_title: "Arrays",
         image: "https://picsum.photos/800/400",
         description: "What are Javascript arrays", 
         introduction: "",
@@ -2422,6 +2448,7 @@ const courses = [
     {
         id: 10,
         title: "Functions in Javascript",
+        sidebar_title: "Functions",
         image: "https://picsum.photos/800/400",
         description: "How to use Javascript functions", 
         introduction: "",
@@ -2480,6 +2507,7 @@ const courses = [
     {
         id: 11,
         title: "Methods in Javascript",
+        sidebar_title: "Methods",
         image: "https://picsum.photos/800/400",
         description: "What are methods in Javascript", 
         introduction: "",
@@ -2538,6 +2566,7 @@ const courses = [
     {
         id: 12,
         title: "Loops in Javascript",
+        sidebar_title: "Loops",
         image: "https://picsum.photos/800/400",
         description: "What loops are for in Javascript",
         introduction: "",
@@ -2596,6 +2625,7 @@ const courses = [
     {
         id: 13,
         title: "If Statements in Javascript",
+        sidebar_title: "If Statements",
         image: "https://picsum.photos/800/400",
         description: "How to use If statements in Javascript", 
         introduction: "",
@@ -2654,6 +2684,7 @@ const courses = [
     {
         id: 14,
         title: "Switch Statements in Javascript",
+        sidebar_title: "Switch Statements",
         image: "https://picsum.photos/800/400",
         description: "How to use Switch statements in Javascript",
         introduction: "",
@@ -2712,6 +2743,7 @@ const courses = [
     {
         id: 15,
         title: "Javascript Cheatsheet",
+        sidebar_title: "Javascript Cheatsheet",
         image: "https://picsum.photos/800/400",
         description: "Recap of the basics of Javascript", 
         introduction: "",
