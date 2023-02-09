@@ -40,19 +40,19 @@ function Login({ setIsAuth }) {
       const accessToken = response?.data?.accessToken;
       const roles = response?.data?.roles;
 
-      setAuth({user, pwd, roles, accessToken});
+      setAuth({ user, pwd, roles, accessToken });
       setUser("");
       setPwd("");
       setSuccess(true);
     } catch (err) {
       if (!err?.response) {
-        setErrMsg('No Server Response')
+        setErrMsg("No Server Response");
       } else if (err.response?.status === 400) {
-        setErrMsg('Missing Username or Password')
+        setErrMsg("Missing Username or Password");
       } else if (err.response?.status === 401) {
-        setErrMsg('Unauthorized')
+        setErrMsg("Unauthorized");
       } else {
-        setErrMsg('Login Failed')
+        setErrMsg("Login Failed");
       }
       errRef.current.focus();
     }
@@ -83,7 +83,7 @@ function Login({ setIsAuth }) {
           </p>
         </section>
       ) : (
-        <section>
+        <section className="login-form">
           <p
             ref={errRef}
             className={errMsg ? "errmsg" : "offscreen"}
@@ -92,9 +92,12 @@ function Login({ setIsAuth }) {
             {errMsg}
           </p>
           <h1>Sign In</h1>
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="username">Username</label>
+          <form cl onSubmit={handleSubmit}>
+            <label className="input-label" htmlFor="username">
+              Username:{" "}
+            </label>
             <input
+              className="input_form"
               type="text"
               id="username"
               ref={userRef}
@@ -102,11 +105,14 @@ function Login({ setIsAuth }) {
               onChange={(e) => setUser(e.target.value)}
               value={user}
               required
-            /> 
+            />
             <br />
             <br />
-            <label htmlFor="password">Password</label>
+            <label className="input-label" htmlFor="password">
+              Password:{" "}
+            </label>
             <input
+              className="input_form"
               type="password"
               id="password"
               onChange={(e) => setPwd(e.target.value)}
@@ -116,7 +122,6 @@ function Login({ setIsAuth }) {
           </form>
           <br />
           <button className="button primary">Sign In</button>
-          <br />
           <br />
           <button className="button primary" onClick={signInWithGoogle}>
             Sign in with Google
