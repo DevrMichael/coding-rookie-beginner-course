@@ -28,7 +28,7 @@ function Login({ setIsAuth }) {
 
     try {
       const response = await axios.post(
-        LOGIN_URL,
+        // LOGIN_URL,
         JSON.stringify({ user, pwd }),
         {
           headers: { "Content-Type": "application/json" },
@@ -73,7 +73,7 @@ function Login({ setIsAuth }) {
   };
 
   return (
-    <div className="loginPage">
+    <div className="page summary">
       {success ? (
         <section>
           <h1>You are logged in!</h1>
@@ -102,7 +102,9 @@ function Login({ setIsAuth }) {
               onChange={(e) => setUser(e.target.value)}
               value={user}
               required
-            />
+            /> 
+            <br />
+            <br />
             <label htmlFor="password">Password</label>
             <input
               type="password"
@@ -111,10 +113,12 @@ function Login({ setIsAuth }) {
               value={pwd}
               required
             />
-            <button>Sign In</button>
           </form>
-          <p>Sign In With Google to Continue</p>
-          <button className="login-with-google-btn" onClick={signInWithGoogle}>
+          <br />
+          <button className="button primary">Sign In</button>
+          <br />
+          <br />
+          <button className="button primary" onClick={signInWithGoogle}>
             Sign in with Google
           </button>
         </section>
