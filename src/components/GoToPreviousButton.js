@@ -8,13 +8,13 @@ function GoToPreviousButton({courseId, lessonId, setActiveButton}) {
     if ((lessonId - 1) === 1) {
       navigate(`/courses/${courseId}/lessons/0`);
     } else {
-      navigate(`/courses/${courseId}/lessons/${lessonId}`);
+      navigate(`/courses/${courseId}/lessons/${lessonId - 2}`);
     }
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-    setActiveButton(lessonId)
+    setActiveButton(lessonId - 2)
   }
 
   return (

@@ -32,7 +32,7 @@ function Lesson() {
 
   const navigate = useNavigate();
 
-  const [activeButton, setActiveButton] = useState(null);
+  const [activeButton, setActiveButton] = useState(0);
 
   return (
     <div className="Lesson">
