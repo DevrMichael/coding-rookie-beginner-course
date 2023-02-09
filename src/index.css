@@ -207,6 +207,19 @@ nav {
   opacity: 0.9;
   transition: 0.3s;
 }
+.Lesson {
+  display: flex;
+}
+
+.lesson__side-bar{
+display: flex;
+flex-direction: column;
+width: 20%;
+}
+
+.lesson__content{
+  width: 90%;
+}
 
 .Lesson header,
 .Course header {

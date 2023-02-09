@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import courses from "../courses";
 import React, { useEffect } from "react";
 import Vimeo from "@u-wave/react-vimeo";
@@ -7,7 +7,7 @@ import Prism from "prismjs";
 import "prismjs/themes/prism-vsc-dark-plus.css";
 import GoToQuizButton from "../components/GoToQuizButton";
 import GoToPreviousButton from "../components/GoToPreviousButton";
-import CompleteCourse from "../components/CompleteCourse"
+import CompleteCourse from "../components/CompleteCourse";
 
 function Lesson() {
   const { courseId, lessonId } = useParams();
@@ -30,41 +30,65 @@ function Lesson() {
     Prism.highlightAll();
   }, []);
 
+  const navigate = useNavigate();
+
   return (
-    <div className="Lesson page">
-      <header>
-        <p>
-          <Link to={"/courses/" + course.id}>Back to {course.title}</Link>
-        </p>
-        <h1>{lessonId > 0 ? lessonId + '. ' + lesson.title : lesson.title}</h1>
-      </header>
-      <div className="Content">
-        <div className="posts">
-          <div>
-            <p>{lesson.introduction}</p>
-            {lesson.image && <img src={`${lesson.image}`} alt="random-pic" />}
-            <p>{lesson.body}</p>
-            {lesson.codesnippet && (
-              <pre className={"language-javascript"}>
-                <code>{lesson.codesnippet}</code>
-              </pre>
-            )}
-            <p>{lesson.summary}</p>
-            <Vimeo video={lesson.vimeoId} responsive />
-          </div>
-        </div>
-        <div className="lessonNavigateBtns">
-          <div className="newLessonBtns">
-            {lessonId > 0 && <GoToPreviousButton courseId={courseId} lessonId={prevLessonId()} />}
-            {lessonId < 15 ? <CompleteAndContinueButton
-              courseId={courseId}
-              lessonId={nextLessonId()}
-            /> : <CompleteCourse courseId={courseId}/>}
-          </div>
-          <div className="goToQuizBtn">
-            {lesson.quizQuestions && (
-              <GoToQuizButton courseId={courseId} lessonId={lessonId} />
-            )}
+    <div className="Lesson">
+      <div className="lesson__side-bar">
+      {course.lessons.map((lesson) => (
+<button onClick={() => navigate('/courses/'+ course.id + '/lessons/' + lesson.id)} to={`courses/${course}/lessons/${lesson}`} className="courseBtn"> {lesson.title} </button>
+            ))}
+      </div>
+      <div className="Lesson page">
+        <div className="lesson__content">
+          <header>
+            <p>
+              <Link to={"/courses/" + course.id}>Back to {course.title}</Link>
+            </p>
+            <h1>
+              {lessonId > 0 ? lessonId + ". " + lesson.title : lesson.title}
+            </h1>
+          </header>
+          <div className="Content">
+            <div className="posts">
+              <div>
+                <p>{lesson.introduction}</p>
+                {lesson.image && (
+                  <img src={`${lesson.image}`} alt="random-pic" />
+                )}
+                <p>{lesson.body}</p>
+                {lesson.codesnippet && (
+                  <pre className={"language-javascript"}>
+                    <code>{lesson.codesnippet}</code>
+                  </pre>
+                )}
+                <p>{lesson.summary}</p>
+                <Vimeo video={lesson.vimeoId} responsive />
+              </div>
+            </div>
+            <div className="lessonNavigateBtns">
+              <div className="newLessonBtns">
+                {lessonId > 0 && (
+                  <GoToPreviousButton
+                    courseId={courseId}
+                    lessonId={prevLessonId()}
+                  />
+                )}
+                {lessonId < 15 ? (
+                  <CompleteAndContinueButton
+                    courseId={courseId}
+                    lessonId={nextLessonId()}
+                  />
+                ) : (
+                  <CompleteCourse courseId={courseId} />
+                )}
+              </div>
+              <div className="goToQuizBtn">
+                {lesson.quizQuestions && (
+                  <GoToQuizButton courseId={courseId} lessonId={lessonId} />
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>
