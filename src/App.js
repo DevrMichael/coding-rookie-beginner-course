@@ -3,6 +3,7 @@ import { useState } from "react";
 import Home from "./pages/Home";
 import Lesson from "./pages/Lesson";
 import Course from "./pages/Course";
+import SignUp from "./pages/SignUp"
 import Login from "./pages/Login";
 import { signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
@@ -41,6 +42,9 @@ function App() {
             </button> : <Link className="button primary" to="/login">
               Login
             </Link>}
+            <Link className="button primary" to="/signup">
+              Signup
+            </Link>
           </div>
         </nav>
         <Routes>
@@ -51,6 +55,7 @@ function App() {
             element={<Lesson />}
           />
           <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route
             path="/courses/:courseId/lessons/:lessonId/quiz"
             element={<Quiz />}
