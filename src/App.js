@@ -1,29 +1,16 @@
 import { Routes, Route, Link } from "react-router-dom";
-import { useState } from "react";
 import Home from "./pages/Home";
 import Lesson from "./pages/Lesson";
 import Course from "./pages/Course";
 import SignUp from "./pages/SignUp"
 import Login from "./pages/Login";
-import { signOut } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
-import { auth } from "./firebase-config";
 import Quiz from "./components/Quiz";
 import FinishedSingleCourse from "./pages/FinishedSingleCourse";
 import FAQ from "./pages/FAQ";
 
 function App() {
-  const [isAuth, setIsAuth] = useState(false);
 
-  let navigate = useNavigate();
 
-  const signUserOut = () => {
-    signOut(auth).then(() => {
-      localStorage.clear();
-      setIsAuth(false);
-      navigate("/login");
-    });
-  };
   return (
     <div className="App">
       <main>
@@ -37,11 +24,12 @@ function App() {
             </Link>
           </div>
           <div>
-            {isAuth ? <button className="button primary" onClick={signUserOut}>
+            <button className="button primary">
               Log Out
-            </button> : <Link className="button primary" to="/login">
+            </button>
+            <Link className="button primary" to="/login">
               Login
-            </Link>}
+            </Link>
             <Link className="button primary" to="/signup">
               Signup
             </Link>
@@ -54,7 +42,7 @@ function App() {
             path="/courses/:courseId/lessons/:lessonId"
             element={<Lesson />}
           />
-          <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route
             path="/courses/:courseId/lessons/:lessonId/quiz"
