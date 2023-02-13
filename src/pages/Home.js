@@ -7,10 +7,6 @@ function Home() {
     <div className="Home page">
       <header>
         <h1>Coding Rookie Software Developer Roadmap</h1>
-        <p>
-          Learn and dive into all the necessary aspects of programming that will
-          get you a job within a year!
-        </p>
       </header>
       <div className="courseSummary">
         {courses.map((course) => (
