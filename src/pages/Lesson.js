@@ -39,6 +39,7 @@ function Lesson() {
       <div className="lesson__side-bar">
         {course.lessons.map((lesson) => (
           <button
+          key={lesson.id}
             onClick={() => {
               navigate("/courses/" + course.id + "/lessons/" + lesson.id);
               setActiveButton(lesson.id);
