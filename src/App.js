@@ -16,21 +16,21 @@ function App() {
       <main>
         <nav>
           <div>
-            <Link className="button primary" to="/">
+            <Link className="navBtns" to="/">
               Home
             </Link>
-            <Link className="button primary" to="/faq">
+            <Link className="navBtns" to="/faq">
               FAQ
             </Link>
           </div>
           <div>
-            <Link className="button primary" to="logout">
+            <Link className="navBtns" to="logout">
               Log Out
             </Link>
-            <Link className="button primary" to="/login">
+            <Link className="navBtns" to="/login">
               Login
             </Link>
-            <Link className="button primary" to="/signup">
+            <Link className="navBtns" to="/signup">
               Signup
             </Link>
           </div>
