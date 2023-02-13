@@ -14,11 +14,13 @@ function FAQ() {
 
   return (
     <div className="page summary">
+      <h1>Frequently Asked Questions</h1>
+      <p className="faq__info-text">Here are the most common question people who want to become a self-taught developer ask.</p>
       {faqs.map((faq, i) => (
         <div onClick={() => toggleFaq(i)}>
           <div>
-            <h1>{faq.question}</h1>
-            {openFaq === i && <h2>{faq.answer}</h2>}
+            <h2>{faq.question}</h2>
+            {openFaq === i && <p>{faq.answer}</p>}
           </div>
         </div>
       ))}

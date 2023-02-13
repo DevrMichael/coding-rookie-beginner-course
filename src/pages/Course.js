@@ -32,6 +32,10 @@ function Course() {
                 />
             ))}
         </div>
+        <footer>
+        <h1 className="navBtns">Coding Rookie</h1>
+        <h2 className="navBtns">Terms & Conditions</h2>
+      </footer>
     </div>
   )
 }
