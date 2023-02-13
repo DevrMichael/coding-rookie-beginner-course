@@ -6,13 +6,13 @@ function LessonSummary(props) {
     <section key={props.lesson.id} className="summary">
         <div>
             <div className='title'>
-                <h2>
+                <h1>
                     <Link
-                        className='no-underline cursor-pointer'
+                        className='no-underline cursor-pointer lesson-title'
                         to={'/courses/' + props.courseId + '/lessons/' + props.lesson.id}>
                             {props.lesson.id > 0 ? props.num - 1 + '. ' + props.lesson.title : props.lesson.title}
                         </Link>
-                </h2>
+                </h1>
             </div>
             <p>
                 <Link

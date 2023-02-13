@@ -16,7 +16,7 @@ function CourseSummary(props)
             <div className='title'>
                 <h1>
                     <Link
-                        className="no-underline cursor-pointer"
+                        className="no-underline cursor-pointer course-title"
                         to={'/courses/' + props.course.id}
                         >
                             {props.course.title}

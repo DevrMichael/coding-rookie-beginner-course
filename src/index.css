@@ -151,6 +151,10 @@ footer {
   color: rgb(185, 177, 177);
 }
 
+.course-title {
+  font-size: 1.2em;
+}
+
 .summary > div {
   display: flex;
   flex-direction: column;
