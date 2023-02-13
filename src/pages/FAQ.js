@@ -19,7 +19,7 @@ function FAQ() {
       {faqs.map((faq, i) => (
         <div onClick={() => toggleFaq(i)}>
           <div>
-            <h2>{faq.question} +</h2>
+            <h2>{faq.question} {openFaq === i ? '-' : '+'}</h2>
             {openFaq === i && <p>{faq.answer}</p>}
           </div>
         </div>
