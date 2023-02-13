@@ -24,9 +24,9 @@ function App() {
             </Link>
           </div>
           <div>
-            <button className="button primary">
+            <Link className="button primary" to="logout">
               Log Out
-            </button>
+            </Link>
             <Link className="button primary" to="/login">
               Login
             </Link>

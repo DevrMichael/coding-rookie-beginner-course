@@ -90,8 +90,10 @@ p {
 
 nav {
   display: flex;
+  width: 80%;
+  margin: auto;
   justify-content: space-around;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .underline {
@@ -357,6 +359,12 @@ width: 20%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+}
+
+@media (max-height: 750px) {
+  .summary > div {
+    height: 45vh;
+  }
 }
 
 @keyframes spinner {
