@@ -24,7 +24,7 @@ function App() {
             </Link>
           </div>
           <div>
-            <Link className="navBtns" to="logout">
+            <Link className="navBtns" to="/login">
               Log Out
             </Link>
             <Link className="navBtns" to="/login">
