@@ -5,15 +5,15 @@ function Login() {
   const [pwd, setPwd] = useState("");
 
   return (
-    <div className="page summary">
+    <div className="sign-up-page">
         <section className="login-form">
           <h1>Sign Up</h1>
           <form className="signup-form">
-          <label className="input-label" htmlFor="firstname">
+          <label className="sign-up__input-label" htmlFor="firstname">
               First name:{" "}
             </label>
             <input
-              className="input_form"
+              className="sign-up__input_form"
               type="text"
               id="firstname"
               autoComplete="off"
@@ -21,11 +21,11 @@ function Login() {
               value={user}
               required
             />
-            <label className="input-label" htmlFor="lastname">
+            <label className="sign-up__input-label" htmlFor="lastname">
             Last name:{" "}
           </label>
           <input
-            className="input_form"
+            className="sign-up__input_form"
             type="text"
             id="lastname"
             autoComplete="off"
@@ -33,11 +33,11 @@ function Login() {
             value={user}
             required
           />
-          <label className="input-label" htmlFor="email">
+          <label className="sign-up__input-label" htmlFor="email">
               Email:{" "}
             </label>
             <input
-              className="input_form"
+              className="sign-up__input_form"
               type="text"
               id="email"
               autoComplete="off"
@@ -45,11 +45,11 @@ function Login() {
               value={user}
               required
             />
-            <label className="input-label" htmlFor="username">
+            <label className="sign-up__input-label" htmlFor="username">
               Username:{" "}
             </label>
             <input
-              className="input_form"
+              className="sign-up__input_form"
               type="text"
               id="username"
               autoComplete="off"
@@ -57,11 +57,11 @@ function Login() {
               value={user}
               required
             />
-            <label className="input-label" htmlFor="password">
+            <label className="sign-up__input-label" htmlFor="password">
               Password:{" "}
             </label>
             <input
-              className="input_form"
+              className="sign-up__input_form"
               type="password"
               id="password"
               onChange={(e) => setPwd(e.target.value)}
@@ -70,7 +70,7 @@ function Login() {
             />
           </form>
           <br />
-          <button className="button primary">Sign up</button>
+          <button className="button primary sign-up__button">Sign up</button>
         </section>
     </div>
   );

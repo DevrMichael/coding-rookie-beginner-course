@@ -6,9 +6,9 @@ function Login() {
   const [pwd, setPwd] = useState("");
 
   return (
-    <div className="page summary">
+    <div className="login-page">
           <h1>Sign In</h1>
-          <form>
+          <form className="login-form">
             <label className="input-label" htmlFor="username">
               Username:{" "}
             </label>

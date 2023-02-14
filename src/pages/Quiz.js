@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import courses from "../courses";
-import CompleteAndContinueButton from "./CompleteAndContinueButton";
+import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
 
 function Quiz() {
   const [showFinalResults, setShowFinalResults] = useState(false);
@@ -39,7 +39,7 @@ function Quiz() {
   };
 
   return (
-    <div className="summary">
+    <div className="quiz-page">
       <h1>Quiz</h1>
 
       <h2>Current Score: {score}</h2>
@@ -51,7 +51,7 @@ function Quiz() {
             {(score / lesson.quizQuestions.length) * 100} percent)
           </h2>
           <button
-            className="button primary complete btn"
+            className="button primary quiz__restart-btn"
             onClick={() => restartGame()}
           >
             Restart Quiz

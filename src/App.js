@@ -4,7 +4,7 @@ import Lesson from "./pages/Lesson";
 import Course from "./pages/Course";
 import SignUp from "./pages/SignUp"
 import Login from "./pages/Login";
-import Quiz from "./components/Quiz";
+import Quiz from "./pages/Quiz";
 import FinishedSingleCourse from "./pages/FinishedSingleCourse";
 import FAQ from "./pages/FAQ";
 
