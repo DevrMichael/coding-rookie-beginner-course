@@ -10,7 +10,7 @@ function Login() {
           <h1>Sign Up</h1>
           <form className="signup-form">
           <label className="sign-up__input-label" htmlFor="firstname">
-              First name:{" "}
+              First name:*{" "}
             </label>
             <input
               className="sign-up__input_form"
@@ -22,7 +22,7 @@ function Login() {
               required
             />
             <label className="sign-up__input-label" htmlFor="lastname">
-            Last name:{" "}
+            Last name:*{" "}
           </label>
           <input
             className="sign-up__input_form"
@@ -34,7 +34,7 @@ function Login() {
             required
           />
           <label className="sign-up__input-label" htmlFor="email">
-              Email:{" "}
+              Email:*{" "}
             </label>
             <input
               className="sign-up__input_form"
@@ -46,7 +46,7 @@ function Login() {
               required
             />
             <label className="sign-up__input-label" htmlFor="username">
-              Username:{" "}
+              Username:*{" "}
             </label>
             <input
               className="sign-up__input_form"
@@ -58,7 +58,7 @@ function Login() {
               required
             />
             <label className="sign-up__input-label" htmlFor="password">
-              Password:{" "}
+              Password:*{" "}
             </label>
             <input
               className="sign-up__input_form"
