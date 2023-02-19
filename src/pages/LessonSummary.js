@@ -8,7 +8,7 @@ function LessonSummary(props) {
             <div className='title'>
                 <h1>
                     <Link
-                        className='no-underline cursor-pointer lesson-title'
+                        className='no-underline cursor-pointer'
                         to={'/courses/' + props.courseId + '/lessons/' + props.lesson.id}>
                             {props.lesson.id > 0 ? props.num - 1 + '. ' + props.lesson.title : props.lesson.title}
                         </Link>

@@ -44,7 +44,7 @@ function Quiz() {
 
       <h2>Current Score: {score}</h2>
       {showFinalResults ? (
-        <div className="final-results">
+        <div>
           <h1>Final Results</h1>
           <h2>
             {score} out of {lesson.quizQuestions.length} correct - (
@@ -62,7 +62,7 @@ function Quiz() {
           />
         </div>
       ) : (
-        <div className="question-card">
+        <div>
           <h2>
             Question {currentQuestion + 1} out of {lesson.quizQuestions.length}
           </h2>
