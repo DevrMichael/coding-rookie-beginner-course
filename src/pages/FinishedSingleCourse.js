@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import NextCourseButton from "../components/NextCourseButton";
-import courses from "../courses";
+import courses from "../data/courses";
 
 function FinishedSingleCourse() {
   const { courseId } = useParams();

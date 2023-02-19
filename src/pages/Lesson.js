@@ -1,5 +1,5 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
-import courses from "../courses";
+import courses from "../data/courses";
 import React, { useEffect, useState } from "react";
 import Vimeo from "@u-wave/react-vimeo";
 import NextLessonButton from "../components/NextLessonButton";

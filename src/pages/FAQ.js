@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import faqs from "../faqs";
+import faqs from "../data/faqs";
 
 function FAQ() {
   const [openFaq, setOpenFaq] = useState(null);

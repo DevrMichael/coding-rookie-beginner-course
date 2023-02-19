@@ -471,13 +471,3 @@ height: 5%;
     height: 50vh;
   }
 }
-
-@keyframes spinner {
-  from {
-    transform: rotate(0turn);
-  }
-
-  to {
-    transform: rotate(1turn);
-  }
-}

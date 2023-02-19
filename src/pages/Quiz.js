@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import courses from "../courses";
+import courses from "../data/courses";
 import NextLessonButton from "../components/NextLessonButton";
 
 function Quiz() {

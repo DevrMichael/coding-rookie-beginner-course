@@ -1,5 +1,5 @@
 import React from "react";
-import courses from "../courses";
+import courses from "../data/courses";
 import CourseSummary from "../pages/CourseSummary";
 
 function Home() {
