@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import courses from "../courses";
-import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
+import NextLessonButton from "../components/NextLessonButton";
 
 function Quiz() {
   const [showFinalResults, setShowFinalResults] = useState(false);
@@ -56,7 +56,7 @@ function Quiz() {
           >
             Restart Quiz
           </button>
-          <CompleteAndContinueButton
+          <NextLessonButton
             courseId={courseId}
             lessonId={nextLessonId()}
           />

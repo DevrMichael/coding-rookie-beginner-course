@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import GoToNextCourse from "../components/GoToNextCourse";
+import NextCourseButton from "../components/NextCourseButton";
 import courses from "../courses";
 
 function FinishedSingleCourse() {
@@ -12,7 +12,7 @@ function FinishedSingleCourse() {
       <div>
         <h1>Congratulations!</h1>
         <h2>You completed the {course.title} course!</h2>
-        {courseId < 3 && <GoToNextCourse courseId={courseId} />}
+        {courseId < 3 && <NextCourseButton courseId={courseId} />}
         {courseId == 3 && (
           <>
           <p>The next step is to check out the most frequently asked questions and answers about becoming a frontend developer.</p>

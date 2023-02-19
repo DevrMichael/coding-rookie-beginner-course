@@ -2,9 +2,9 @@ import { useNavigate } from "react-router-dom";
 
 import React from 'react'
 
-function GoToNextCourse(props) {
+function NextCourseButton(props) {
     const navigate = useNavigate()
-    function goToNextCourse () {
+    function nextCourse () {
         navigate(`/courses/${parseInt(props.courseId) + 1}/`)
         window.scrollTo({
           top: 0,
@@ -13,10 +13,10 @@ function GoToNextCourse(props) {
       };
 
   return (
-    <button className="button primary complete btn" onClick={goToNextCourse}>
+    <button className="button primary complete btn" onClick={nextCourse}>
        Start the next course
     </button>
   )
 }
 
-export default GoToNextCourse
+export default NextCourseButton

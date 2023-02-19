@@ -2,9 +2,9 @@ import { useNavigate } from "react-router-dom";
 
 import React from 'react'
 
-function CompleteAndContinueButton({courseId, lessonId, setActiveButton}) {
+function NextLessonButton({courseId, lessonId, setActiveButton}) {
     const navigate = useNavigate()
-    function completeAndContinue () {
+    function nextLesson () {
         navigate(`/courses/${courseId}/lessons/${lessonId}`)
         window.scrollTo({
           top: 0,
@@ -14,10 +14,10 @@ function CompleteAndContinueButton({courseId, lessonId, setActiveButton}) {
       };
 
   return (
-    <button className="button primary complete btn" onClick={completeAndContinue}>
+    <button className="button primary complete btn" onClick={nextLesson}>
        Next Lesson
     </button>
   )
 }
 
-export default CompleteAndContinueButton
+export default NextLessonButton

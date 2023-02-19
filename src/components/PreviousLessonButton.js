@@ -2,9 +2,9 @@ import { useNavigate } from "react-router-dom";
 
 import React from "react";
 
-function GoToPreviousButton({courseId, lessonId, setActiveButton}) {
+function PreviousLessonButton({courseId, lessonId, setActiveButton}) {
   const navigate = useNavigate();
-  function goToPrevious() {
+  function previousLesson() {
     if ((lessonId - 1) === 1) {
       navigate(`/courses/${courseId}/lessons/0`);
     } else {
@@ -20,11 +20,11 @@ function GoToPreviousButton({courseId, lessonId, setActiveButton}) {
   return (
     <button
       className="button primary complete btn"
-      onClick={goToPrevious}
+      onClick={previousLesson}
     >
      Go Back
     </button>
   );
 }
 
-export default GoToPreviousButton;
+export default PreviousLessonButton;

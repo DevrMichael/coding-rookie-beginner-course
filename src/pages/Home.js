@@ -1,6 +1,6 @@
 import React from "react";
 import courses from "../courses";
-import CourseSummary from "../components/CourseSummary";
+import CourseSummary from "../pages/CourseSummary";
 
 function Home() {
   return (

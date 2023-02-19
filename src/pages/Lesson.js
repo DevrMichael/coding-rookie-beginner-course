@@ -2,12 +2,12 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import courses from "../courses";
 import React, { useEffect, useState } from "react";
 import Vimeo from "@u-wave/react-vimeo";
-import CompleteAndContinueButton from "../components/CompleteAndContinueButton";
+import NextLessonButton from "../components/NextLessonButton";
 import Prism from "prismjs";
 import "prismjs/themes/prism-vsc-dark-plus.css";
 import GoToQuizButton from "../components/GoToQuizButton";
-import GoToPreviousButton from "../components/GoToPreviousButton";
-import CompleteCourse from "../components/CompleteCourse";
+import PreviousLessonButton from "../components/PreviousLessonButton";
+import CompleteCourse from "../components/CompleteCourseButton";
 
 function Lesson() {
   const { courseId, lessonId } = useParams();
@@ -83,14 +83,14 @@ function Lesson() {
             <div className="lessonNavigateBtns">
               <div className="newLessonBtns">
                 {lessonId > 0 && (
-                  <GoToPreviousButton
+                  <PreviousLessonButton
                     setActiveButton={setActiveButton}
                     courseId={courseId}
                     lessonId={prevLessonId()}
                   />
                 )}
                 {lessonId < 15 ? (
-                  <CompleteAndContinueButton
+                  <NextLessonButton
                     setActiveButton={setActiveButton}
                     courseId={courseId}
                     lessonId={nextLessonId()}
