@@ -63,8 +63,8 @@ function Lesson() {
               {lessonId > 0 ? lessonId + ". " + lesson.title : lesson.title}
             </h1>
           </header>
-          <div className="Content">
-            <div className="posts">
+          <div>
+            <div>
               <div>
                 <p>{lesson.introduction}</p>
                 {lesson.image && (
@@ -81,7 +81,7 @@ function Lesson() {
               </div>
             </div>
             <div className="lessonNavigateBtns">
-              <div className="newLessonBtns">
+              <div>
                 {lessonId > 0 && (
                   <PreviousLessonButton
                     setActiveButton={setActiveButton}
@@ -99,7 +99,7 @@ function Lesson() {
                   <CompleteCourse courseId={courseId} />
                 )}
               </div>
-              <div className="goToQuizBtn">
+              <div>
                 {lesson.quizQuestions && (
                   <GoToQuizButton courseId={courseId} lessonId={lessonId} />
                 )}

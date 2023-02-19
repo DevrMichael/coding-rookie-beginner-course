@@ -123,6 +123,10 @@ nav {
   color: var(--color-subtle-dark);
 }
 
+header {
+  width: 60vw;
+}
+
 footer {
   display: flex;
   width: 100%;
@@ -417,18 +421,6 @@ footer {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
-}
-
-.button.auth {
-  padding: 0.75rem 1.5rem;
-  font-size: var(--font-size-xs);
-  background: var(--color-subtle-medium);
-  border: 0;
-  font-family: var(--font-primary);
-  font-weight: 700;
-  border-radius: var(--border-radius);
-  transition: opacity 0.2s ease;
-  cursor: pointer;
 }
 
 .button.primary {
