@@ -3,7 +3,7 @@ import React from 'react'
 
 function LessonSummary(props) {
   return (
-    <section key={props.lesson.id} className="summary">
+    <section key={props.lesson.id} className="card">
         <div>
             <div className='title'>
                 <h1>

@@ -8,7 +8,7 @@ function FinishedSingleCourse() {
   const course = courses.find((course) => course.id === parseInt(courseId));
 
   return (
-    <div className="summary">
+    <div className="card">
       <div>
         <h1>Congratulations!</h1>
         <h2>You completed the {course.title} course!</h2>

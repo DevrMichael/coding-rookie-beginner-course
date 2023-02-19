@@ -56,6 +56,8 @@
   src: url("./fonts/Recoleta-RegularDEMO.otf");
 }
 
+                                            /* GENERAL STYLES */
+
 html,
 body {
   font-size: 14px;
@@ -105,7 +107,20 @@ nav {
 .navBtns:hover {
   background-color: #f4f4f5;
   border-radius: 9999px;
+}
 
+.Lesson header,
+.Course header {
+  margin-bottom: 2rem;
+}
+
+.Home header h1 {
+  text-align: center;
+}
+
+.page header p {
+  font-size: var(--font-size-xs);
+  color: var(--color-subtle-dark);
 }
 
 footer {
@@ -115,10 +130,6 @@ footer {
   justify-content: space-around;
   margin-bottom: 30px;
   margin-top: 30px;
-}
-
-.underline {
-  text-decoration: underline;
 }
 
 .no-underline {
@@ -134,6 +145,8 @@ footer {
   max-width: 100%;
   margin: 0 auto;
 }
+
+                                            /* FRONT PAGE */
 
 .courseSummary {
   display: grid;
@@ -155,7 +168,9 @@ footer {
   font-size: 1.2em;
 }
 
-.summary > div {
+                                            /* CARD COMPONENT */
+
+.card > div {
   display: flex;
   flex-direction: column;
   height: 35vh;
@@ -174,37 +189,39 @@ footer {
   cursor: pointer;
 }
 
-.summary > div:hover {
+.card > div:hover {
   background-color: rgba(238, 238, 238, 0.04);
   box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.38),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
 }
 
-.summary .title {
+.card .title {
   display: flex;
   justify-content: center;
 }
 
-.summary .title svg {
+.card .title svg {
   height: 25px;
   width: 25px;
   color: var(--color-subtle-medium);
 }
 
-.summary .title svg.enrolled {
+.card .title svg.enrolled {
   color: var(--color-theme-dark);
 }
 
-.summary .title svg.complete {
+.card .title svg.complete {
   color: var(--color-button-primary);
 }
 
-.summary p {
+.card p {
   font-size: var(--font-size-sm);
   color: var(--color-subtle-dark);
   margin: 0;
 }
+
+                                            /* INPUT FORM */
 
 .input_form {
   font-size: 1.5em;
@@ -222,12 +239,8 @@ footer {
   font-size: 1.3em;
   padding-right: 10px;
 }
+                                            /* LESSON SIDE BAR */
 
-.quizBtns {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
-}
 .lesson__side-bar{
   height: 100%;
 }
@@ -258,6 +271,125 @@ footer {
   color: white;
 }
 
+.lesson__side-bar{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  }
+
+                                            /* LESSON PAGE */
+
+.Lesson {
+  display: flex;
+}
+
+                                            /* LOGIN AND SIGNUP PAGE */
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  border: solid rgba(244, 244, 245);
+  border-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.08),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.login-page>h1 {
+  font-size: 2.8em;
+}
+
+
+.login-form {
+  text-align: center;
+}
+
+.sign-up-page {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  border: solid rgba(244, 244, 245);
+  border-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.08),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+.signup-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up__input_form {
+  font-size: 1.5em;
+  height: 50px;
+  width: 350px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+
+.sign-up__input-label {
+  text-align: left;
+  padding-top: 0.5em;
+  font-size: 1.3em;
+  padding-right: 10px;
+}
+
+.sign-up__button {
+  width: 100%;
+  height: 60px;
+}
+
+                                            /* QUIZ PAGE */
+
+.quiz-page {
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: solid rgba(244, 244, 245);
+  border-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.08),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+                                            /* FAQ PAGE */
+
+.faq__info-text {
+  padding-bottom: 30px;
+}
+
+                                            /* BUTTONS */
+
 .courseBtn {
   font-size: 1.5em;
   background-color: white;
@@ -280,32 +412,11 @@ footer {
   opacity: 0.9;
   transition: 0.3s;
 }
-.Lesson {
-  display: flex;
-}
 
-.lesson__side-bar{
-display: flex;
-flex-direction: column;
-width: 20%;
-}
-
-.lesson__content{
-  width: 100%;
-}
-
-.Lesson header,
-.Course header {
-  margin-bottom: 2rem;
-}
-
-.Home header h1 {
-  text-align: center;
-}
-
-.page header p {
-  font-size: var(--font-size-xs);
-  color: var(--color-subtle-dark);
+.quizBtns {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .button.auth {
@@ -359,115 +470,14 @@ width: 20%;
   margin-bottom: 100px;
 }
 
-.faq__info-text {
-  padding-bottom: 30px;
-}
-
-.login-page {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: 60vh;
-  justify-content: center;
-  align-items: center;
-  margin: 80px auto;
-  border: solid rgba(244, 244, 245);
-  border-width: 1px;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.08),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
-}
-
-.login-page>h1 {
-  font-size: 2.8em;
-}
-
-.sign-up-page {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  height: 75vh;
-  justify-content: center;
-  align-items: center;
-  margin: 80px auto;
-  border: solid rgba(244, 244, 245);
-  border-width: 1px;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.08),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
-}
-
-.login-form {
-  text-align: center;
-}
-
-.login-form>h1 {
-height: 5%;
-}
-
-.signup-form{
-  display: flex;
-  flex-direction: column;
-}
-
-.sign-up__input_form {
-  font-size: 1.5em;
-  height: 50px;
-  width: 350px;
-  border-radius: 5px;
-  border-width: 1px;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-}
-
-.sign-up__input-label {
-  text-align: left;
-  padding-top: 0.5em;
-  font-size: 1.3em;
-  padding-right: 10px;
-}
-
-.sign-up__button {
-  width: 100%;
-  height: 60px;
-}
-
-.quiz-page {
-  display: flex;
-  flex-direction: column;
-  height: 65vh;
-  width: 50%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  border: solid rgba(244, 244, 245);
-  border-width: 1px;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.08),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
-}
-
 .quiz__restart-btn {
   margin-right: 20px;
 }
 
+                                    /* MEDIA QUERIES */
+
 @media (max-height: 850px) {
-  .summary > div {
+  .card > div {
     height: 50vh;
   }
 }

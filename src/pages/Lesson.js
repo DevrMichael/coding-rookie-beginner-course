@@ -54,7 +54,7 @@ function Lesson() {
         ))}
       </div>
       <div className="Lesson page">
-        <div className="lesson__content">
+        <div>
           <header>
             <p>
               <Link to={"/courses/" + course.id}>Back to {course.title}</Link>

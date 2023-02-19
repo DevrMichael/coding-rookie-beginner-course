@@ -10,7 +10,7 @@ function CourseSummary(props)
     }
 
   return (
-    <section key={props.course.id} className={`summary ${(props.course.id === 3) && 'span-col-2'}`}>
+    <section key={props.course.id} className={`card ${(props.course.id === 3) && 'span-col-2'}`}>
         <div onClick={goToCoursePage}>
         <h1 className='courseNumber'>{props.course.id}.</h1> 
             <div className='title'>

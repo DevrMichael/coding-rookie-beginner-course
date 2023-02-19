@@ -13,7 +13,7 @@ function FAQ() {
   };
 
   return (
-    <div className="page summary">
+    <div className="page card">
       <h1>Frequently Asked Questions</h1>
       <p className="faq__info-text">Here are the most common question people who want to become a self-taught developer ask.</p>
       {faqs.map((faq, i) => (
