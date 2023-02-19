@@ -1726,14 +1726,17 @@ const courses = [
         },
         {
             id: 12,
-            title: "Screen Customization & Media Queries",
-            sidebar_title: "Screen Customization",
+            title: "Media Queries",
+            sidebar_title: "Media Queries",
             image: "https://picsum.photos/800/400",
             description: "How to adapt your HTML pages to different screen sizes",
-            introduction: "",
-            body: "",
-            codesnippet: ``,
-            summary:"", 
+            introduction: "CSS media queries are a powerful feature of Cascading Style Sheets (CSS) that allow developers to create different styles for different devices or screen sizes. Media queries allow web pages to be responsive, adapting to different viewport sizes and resolutions, by applying different styles based on the characteristics of the user's device.",
+            body: "Media queries work by checking certain device parameters, such as screen width, height, orientation, and resolution, and applying different styles based on the results. For example, a media query might check if the user's device has a screen width of less than 768 pixels and apply a different style sheet for mobile devices. Media queries are written using the @media rule in CSS, followed by the specific media feature that the query is checking for. For example, a media query that checks for a maximum screen width of 768 pixels would be written like this:",
+            codesnippet: `
+            @media (max-width: 768px) {
+              /* CSS styles for screens with a maximum width of 768 pixels go here */
+            }`,
+            summary:"In this example, any CSS styles inside the curly braces will only be applied if the user's device has a maximum screen width of 768 pixels or less. Media queries can be used to create a wide variety of responsive designs, from simple adjustments to font sizes and layouts, to complex designs that reorganize content and navigation based on the user's device. With media queries, developers can create web pages that are optimized for different devices and screen sizes, providing a better user experience for all users.", 
             vimeoId: 76979871,
             quizQuestions: [
                 {
@@ -1789,10 +1792,19 @@ const courses = [
             sidebar_title: "Z-Index",
             image: "https://picsum.photos/800/400",
             description: "What the z-index is in CSS", 
-            introduction: "",
-            body: "",
-            codesnippet: ``,
-            summary:"",
+            introduction: "In CSS, z-index is a property that controls the stacking order of positioned elements. The z-index property determines which element appears on top of other elements when they overlap on a web page.",
+            body: "Every HTML element has a default z-index value of auto, which means that its stacking order is determined by the order in which the elements appear in the HTML markup. However, by setting the z-index property to a non-auto value, developers can control the stacking order of elements in a more precise way. The z-index property takes an integer value, with higher values stacking on top of lower values. For example, an element with a z-index of 2 will appear on top of an element with a z-index of 1. It's important to note that the z-index property only works on elements that have a position value of absolute, fixed, or relative. By default, non-positioned elements cannot be stacked in the z-axis and cannot have a z-index value. Here's an example of how the z-index property can be used to control the stacking order of elements:",
+            codesnippet: `
+            .box1 {
+              position: absolute;
+              z-index: 2;
+            }
+            
+            .box2 {
+              position: absolute;
+              z-index: 1;
+            }`,
+            summary:"In this example, .box1 has a higher z-index value than .box2, so it will appear on top of .box2 when the two elements overlap on the page. Overall, the z-index property is a powerful tool for controlling the stacking order of elements in a web page, allowing developers to create complex layouts and visual effects.",
             vimeoId: 76979871,
             quizQuestions: [
                 {
@@ -1848,10 +1860,13 @@ const courses = [
             sidebar_title: "CSS Align",
             image: "https://picsum.photos/800/400",
             description: "How to align elements in CSS", 
-            introduction: "",
-            body: "",
-            codesnippet: ``,
-            summary:"",
+            introduction: "In CSS, the align property is used to horizontally align content within a container. There are several different values that can be used with the align property, each of which determines how the content should be aligned.",
+            body: "Here are some of the most common values of the align property: left: This value aligns the content to the left edge of the container. center: This value centers the content horizontally within the container. right: This value aligns the content to the right edge of the container. justify: This value aligns the content so that it is evenly distributed between the left and right edges of the container, with extra space added between words as needed. initial: This value sets the alignment to its default value. inherit: This value inherits the alignment from the parent element. The align property can be used with various HTML elements such as <div>, <p>, and <h1> to horizontally align content. Here's an example of how the align property can be used to center a <div> element:",
+            codesnippet: `
+            div {
+              align: center;
+            }`,
+            summary:"In this example, the align property is set to center, which centers the content of the <div> element horizontally within its parent container. Overall, the align property is a useful tool for controlling the horizontal alignment of content in a web page, allowing developers to create visually appealing and well-organized layouts.",
             vimeoId: 76979871,
             quizQuestions: [
                 {
@@ -1907,8 +1922,8 @@ const courses = [
             sidebar_title: "CSS Cheatsheet",
             image: "https://picsum.photos/800/400",
             description: "Recap of the basics of CSS", 
-            introduction: "",
-            body: "",
+            introduction: "Now, that you have gone through the full CSS course, here is a cheatsheet of what you should focus on going forward to expand your knowledge on CSS.",
+            body: "Box Model: Understanding the box model is essential for creating layouts with CSS. The box model describes how HTML elements are made up of content, padding, borders, and margins. Selectors: CSS selectors are used to select HTML elements that you want to style. There are several types of selectors, including tag selectors, class selectors, and ID selectors. Properties: CSS properties are used to specify the visual style of an HTML element. There are many different properties you can use, such as color, font size, background color, and margin. Layouts: CSS can be used to create complex layouts for web pages, including multi-column layouts, grid layouts, and responsive layouts. Cascading: The C in CSS stands for cascading, which means that styles can be inherited from parent elements and overridden by child elements. Understanding how cascading works is essential for creating complex stylesheets. Media queries: Media queries are used to apply different styles to HTML elements based on the size of the screen or device. This is important for creating responsive web designs that look good on all devices. Flexbox: Flexbox is a CSS layout module that makes it easy to create flexible and responsive layouts. It's especially useful for creating layouts with columns and rows. CSS frameworks: There are many CSS frameworks available that provide pre-built styles and layouts for web pages. Learning how to use a CSS framework can save you time and help you create professional-looking designs. Browser compatibility: Different web browsers can interpret CSS differently, which can cause your stylesheets to look different on different browsers. Learning how to write CSS that works across different browsers is an important skill. CSS preprocessors: CSS preprocessors like Sass and Less can make it easier to write and maintain large stylesheets. These tools allow you to use variables, functions, and other programming concepts to make your CSS more efficient and easier to work with.",
             codesnippet: ``,
             summary:"",
             vimeoId: 76979871
@@ -1932,10 +1947,10 @@ const courses = [
         sidebar_title: "Javascript Introduction",
         image: "https://picsum.photos/800/400",
         description: "First Javascript module", 
-        introduction: "",
-        body: "",
+        introduction: "JavaScript is a high-level, interpreted programming language that is widely used in web development. It is a scripting language that runs on the client-side (in the web browser) and can be used to create dynamic and interactive web pages.",
+        body: "JavaScript was originally created by Brendan Eich at Netscape in 1995 and was later standardized as ECMAScript. Since then, it has become one of the most popular programming languages in the world, with a vast ecosystem of libraries, frameworks, and tools. JavaScript is often used to add interactivity to web pages, such as form validation, animations, and dynamic content updates. It can also be used on the server-side with Node.js to build full-stack web applications.",
         codesnippet: ``,
-        summary:"",
+        summary:"JavaScript syntax is similar to other programming languages like Java and C, but it also has some unique features like dynamic typing, first-class functions, and closures. With the rise of modern web development technologies like React, Angular, and Vue.js, JavaScript has become an essential skill for web developers.",
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -1991,10 +2006,10 @@ const courses = [
         sidebar_title: "What is Javascript?",
         image: "https://picsum.photos/800/400",
         description: "Introduction of Javascript",
-        introduction: "",
-        body: "",
+        introduction: "JavaScript is a versatile programming language that can perform a wide range of tasks. Here are some of the things that JavaScript can do:",
+        body: "Create dynamic web content: JavaScript can be used to create interactive and dynamic web pages. For example, it can be used to validate forms, add animations, update content dynamically, and create pop-ups. Control the behavior of web browsers: JavaScript can interact with web browsers to control their behavior. For example, it can be used to manipulate the DOM (Document Object Model), change the styles of HTML elements, and respond to user events like mouse clicks and keyboard inputs. Build web applications: JavaScript can be used to build web applications that run entirely in the browser. For example, frameworks like React, Angular, and Vue.js use JavaScript to create rich and complex web applications. Connect to web services: JavaScript can be used to connect to web services and APIs to retrieve and send data. For example, it can be used to fetch data from a database, retrieve weather data from a third-party API, or send data to a web server. Develop server-side applications: With Node.js, JavaScript can be used to build server-side applications that can handle HTTP requests, interact with databases, and communicate with other servers.",
         codesnippet: ``,
-        summary:"", 
+        summary:"Overall, JavaScript is a versatile and powerful programming language that can be used for a wide range of tasks in web development and beyond.", 
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2050,10 +2065,10 @@ const courses = [
         sidebar_title: "Javascript Values",
         image: "https://picsum.photos/800/400",
         description: "What values are in Javascript", 
-        introduction: "",
-        body: "",
+        introduction: "In JavaScript, a value is a piece of data that can be assigned to a variable, passed as an argument to a function, or returned as a result of a computation. There are several types of values in JavaScript, including:",
+        body: "Numbers: JavaScript has a numeric data type that can represent both integers and floating-point numbers. Numbers can be used in mathematical computations, such as addition, subtraction, multiplication, and division. Strings: A string is a sequence of characters enclosed in quotes. Strings can be used to represent text, such as names, addresses, or messages. Booleans: A Boolean value represents either true or false. Booleans are often used in conditional statements and loops to control program flow. Null and Undefined: Null and undefined are special values that represent the absence of a value. Null represents a deliberate absence of any object value, while undefined represents an uninitialized or missing value. Objects: An object is a collection of key-value pairs, where the keys are strings and the values can be any JavaScript value, including other objects. Objects are used to represent complex data structures, such as arrays, maps, and dictionaries. Functions: A function is a value that can be invoked to perform a specific task. Functions can take arguments, perform computations, and return values.",
         codesnippet: ``,
-        summary:"",
+        summary:"Overall, JavaScript values are the building blocks of JavaScript programs. They can be combined, transformed, and manipulated to create complex applications and dynamic web content.",
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2109,10 +2124,10 @@ const courses = [
         sidebar_title: "Creating Variables",
         image: "https://picsum.photos/800/400",
         description: "How to create variables in Javascript", 
-        introduction: "",
-        body: "",
+        introduction: "In JavaScript, a variable is a named container that holds a value. Variables are used to store data that can be used and manipulated by a program. Here are some key features of variables in JavaScript:",
+        body: "Declaration: A variable can be declared using the keyword var, let, or const. var is the original way of declaring a variable, but let and const were introduced in newer versions of JavaScript to provide additional scoping and immutability features. Assignment: A value can be assigned to a variable using the = operator. For example, let x = 10; assigns the value 10 to the variable x. Data Types: JavaScript variables can hold values of different types, such as numbers, strings, booleans, objects, and functions. Scope: The scope of a variable determines where it can be accessed in a program. Variables declared with var have function scope, while variables declared with let and const have block scope. Mutability: Variables declared with var and let can be reassigned to new values, while variables declared with const are read-only and cannot be reassigned. Naming Conventions: JavaScript variables must follow certain naming conventions. They must start with a letter or underscore, and can contain letters, numbers, or underscores. They are case-sensitive.",
         codesnippet: ``,
-        summary:"",
+        summary:"Overall, variables are an essential part of JavaScript programming, and they enable developers to store and manipulate data in a flexible and dynamic way.",
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2168,10 +2183,10 @@ const courses = [
         sidebar_title: "Operators",
         image: "https://picsum.photos/800/400",
         description: "What are operators in Javascript", 
-        introduction: "",
-        body: "",
+        introduction: "In JavaScript, an operator is a symbol or keyword that performs an action on one or more values, called operands. Operators are used to perform mathematical computations, compare values, and manipulate strings and other data types. Here are some common types of operators in JavaScript:",
+        body: "Arithmetic Operators: Arithmetic operators perform mathematical calculations on numerical values. Examples include + (addition), - (subtraction), * (multiplication), / (division), and % (modulo). Comparison Operators: Comparison operators compare two values and return a Boolean value (true or false) based on the comparison result. Examples include == (equal to), != (not equal to), > (greater than), < (less than), >= (greater than or equal to), and <= (less than or equal to). Logical Operators: Logical operators are used to combine Boolean values and return a Boolean result. Examples include && (logical AND), || (logical OR), and ! (logical NOT). Assignment Operators: Assignment operators are used to assign a value to a variable. Examples include = (simple assignment), += (addition assignment), -= (subtraction assignment), *= (multiplication assignment), /= (division assignment), and %= (modulo assignment). String Operators: String operators are used to manipulate strings. The + operator can be used to concatenate two strings, while the += operator can be used to append a string to an existing string. Type Operators: Type operators are used to check the data type of a value. Examples include typeof, which returns the data type of a value, and instanceof, which checks whether an object is an instance of a particular class.",
         codesnippet: ``,
-        summary:"",
+        summary:"Overall, operators are essential building blocks of JavaScript programs, and they enable developers to perform a wide range of computations and operations on data.",
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2227,10 +2242,10 @@ const courses = [
         sidebar_title: "Writing Statements",
         image: "https://picsum.photos/800/400",
         description: "How statements are in Javascript", 
-        introduction: "",
-        body: "",
+        introduction: "In JavaScript, a statement is a line of code that performs a specific action. Statements can be used to assign values to variables, control program flow, and perform operations on data. Here are some common types of statements in JavaScript:",
+        body: "Variable Declaration: A variable declaration statement creates a new variable and assigns an initial value to it. For example, let x = 10; creates a new variable called x and assigns the value 10 to it. Expression Statement: An expression statement is a statement that evaluates an expression and returns a value. For example, x + y; is an expression statement that evaluates the expression x + y and returns the result. Control Flow Statements: Control flow statements are used to control the flow of a program based on conditions. Examples include if statements, switch statements, and loops such as for, while, and do-while. Function Declaration: A function declaration statement creates a new function with a specified name and parameters. For example, function add(x, y) { return x + y; } creates a new function called add that takes two parameters x and y, and returns their sum. Block Statement: A block statement is a statement that groups several statements together in a block, enclosed by curly braces {}. Block statements are often used in control flow statements and function declarations. Error Handling Statements: Error handling statements are used to catch and handle errors that occur during program execution. Examples include try-catch and throw statements.",
         codesnippet: ``,
-        summary:"",
+        summary:"Overall, statements are essential building blocks of JavaScript programs, and they enable developers to create complex and dynamic applications by controlling program flow, manipulating data, and handling errors.",
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2286,10 +2301,10 @@ const courses = [
         sidebar_title: "Events",
         image: "https://picsum.photos/800/400",
         description: "What events do and how to used them in Javascript",
-        introduction: "",
-        body: "",
+        introduction: "In JavaScript, events are actions or occurrences that happen in a web page or application, such as a user clicking a button or scrolling the page. Events can be detected and responded to using JavaScript code, and they enable developers to create interactive and responsive web applications. Here are some key concepts related to events in JavaScript:",
+        body: "Event Types: There are many types of events in JavaScript, such as mouse events (e.g., click, hover, scroll), keyboard events (e.g., keypress, keydown, keyup), and form events (e.g., submit, reset, change). Event Listeners: An event listener is a JavaScript function that is attached to an element on a web page and is executed when a specific event occurs on that element. Event listeners can be added using the addEventListener() method. Event Handlers: An event handler is a JavaScript function that is executed in response to an event. Event handlers can be defined inline as an attribute of an HTML element, or they can be defined in a separate JavaScript file and attached to an element using an event listener. Event Propagation: Event propagation refers to the way in which events are propagated or passed through the elements in a web page. There are two types of event propagation: bubbling (the event starts at the innermost element and propagates up to the outermost element) and capturing (the event starts at the outermost element and propagates down to the innermost element). Event Object: When an event occurs, an event object is created that contains information about the event, such as the type of event, the target element, and any data associated with the event. Event objects can be accessed and manipulated using JavaScript code.",
         codesnippet: ``,
-        summary:"", 
+        summary:"Overall, events are a powerful feature of JavaScript that enable developers to create dynamic and interactive web applications that respond to user actions and other events.", 
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2345,10 +2360,10 @@ const courses = [
         sidebar_title: "Objects",
         image: "https://picsum.photos/800/400",
         description: "What are Javascript objects", 
-        introduction: "",
-        body: "",
+        introduction: "In JavaScript, an object is a data type that represents a collection of related data and behavior. Objects are used extensively in JavaScript to model real-world entities and concepts, such as users, products, and events. Here are some key concepts related to objects in JavaScript:",
+        body: "Properties: An object's properties are its attributes or data values. Properties can be defined and accessed using dot notation (e.g., obj.prop) or bracket notation (e.g., obj['prop']). Properties can be of any data type, including other objects, functions, and arrays. Methods: An object's methods are its functions or behavior. Methods can be defined as properties that are functions, and they can be called using dot notation (e.g., obj.method()). Methods can access and manipulate the object's properties. Constructors: A constructor is a special function that is used to create new instances of an object. Constructors can be defined using the class syntax or using regular functions and the new keyword. Prototypes: Prototypes are a powerful feature of JavaScript that enable objects to inherit properties and methods from other objects. Each object has a prototype, which is another object that serves as a template for the object's properties and methods. Object-oriented programming (OOP): OOP is a programming paradigm that is based on the concept of objects. In OOP, objects are the basic building blocks of a program, and they are used to model real-world entities and concepts. JavaScript supports OOP through its object-oriented features, such as constructors, prototypes, and inheritance.",
         codesnippet: ``,
-        summary:"",
+        summary:"Overall, objects are a fundamental concept in JavaScript that enable developers to create complex and powerful programs by modeling real-world entities and concepts. By using objects, developers can organize their code into reusable, modular, and easy-to-understand components, and they can create dynamic and interactive applications that respond to user input and other events.",
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2404,10 +2419,10 @@ const courses = [
         sidebar_title: "Arrays",
         image: "https://picsum.photos/800/400",
         description: "What are Javascript arrays", 
-        introduction: "",
-        body: "",
+        introduction: "In JavaScript, an array is a data structure that represents an ordered collection of values. Arrays can store values of any data type, including numbers, strings, booleans, objects, and even other arrays. Here are some key concepts related to arrays in JavaScript:",
+        body: "Declaration and Initialization: To declare and initialize an array in JavaScript, you can use square brackets [] and separate the values with commas, like this: let myArray = [value1, value2, value3]. You can also create an empty array by simply using square brackets with no values inside: let myArray = []. Indexing: Array elements are indexed starting from 0, so the first element is at index 0, the second element is at index 1, and so on. You can access array elements using square bracket notation, like this: myArray[0]. Properties and Methods: Arrays have several built-in properties and methods that allow you to manipulate and access their elements. Some common properties include length, which returns the number of elements in the array, and constructor, which returns the function that created the array. Some common methods include push(), which adds an element to the end of the array, pop(), which removes the last element from the array, and slice(), which returns a copy of a portion of the array. Iteration: Arrays can be iterated over using loops, such as for and while loops. You can also use built-in iteration methods, such as forEach(), map(), and reduce(), which provide a more concise and functional way to iterate over arrays.",
         codesnippet: ``,
-        summary:"",
+        summary:"Overall, arrays are a powerful feature of JavaScript that enable developers to store and manipulate collections of data in a flexible and efficient way. By using arrays, developers can create dynamic and interactive applications that respond to user input and other events, and they can perform complex data operations with ease.",
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2463,10 +2478,10 @@ const courses = [
         sidebar_title: "Functions",
         image: "https://picsum.photos/800/400",
         description: "How to use Javascript functions", 
-        introduction: "",
-        body: "",
+        introduction: "In JavaScript, a function is a block of code that performs a specific task or set of tasks. Functions are a fundamental concept in JavaScript and are used extensively in programming to organize code, make it more reusable, and perform complex operations. Here are some key concepts related to functions in JavaScript:",
+        body: "Declaration and Invocation: To declare a function in JavaScript, you can use the function keyword, followed by the function name, the parameter list (if any), and the function body enclosed in curly braces {}. For example, function myFunction(param1, param2) { ... }. To invoke a function, you can use its name followed by parentheses, passing in any arguments as needed, like this: myFunction(arg1, arg2). Parameters and Arguments: Parameters are the input values that a function accepts, and they are defined in the function declaration. Arguments are the actual values that are passed to the function when it is invoked. In JavaScript, functions can have any number of parameters, including none at all. Return Values: Functions can return values using the return keyword. When a function returns a value, it can be assigned to a variable or used in other expressions. If a function does not explicitly return a value, it returns undefined by default. Scope: Functions have their own scope in JavaScript, which means that variables declared inside a function are not accessible outside of the function. This concept is known as function scope. However, variables declared outside of a function (in the global scope) can be accessed inside the function. Function Expression: A function expression is a way to declare a function as a variable value. In this case, the function is not named and is referred to by the variable name. For example, const myFunc = function(param1, param2) { ... }. Arrow Function: Arrow functions are a shorthand way of declaring functions in JavaScript. They have a simpler syntax and automatically bind the this keyword to the parent scope. For example, const myFunc = (param1, param2) => { ... }.",
         codesnippet: ``,
-        summary:"",
+        summary:"Overall, functions are a powerful feature of JavaScript that enable developers to create modular and reusable code, perform complex operations, and build dynamic and interactive applications. By using functions, developers can organize their code into small, manageable chunks and create more efficient and flexible programs.",
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2522,10 +2537,10 @@ const courses = [
         sidebar_title: "Methods",
         image: "https://picsum.photos/800/400",
         description: "What are methods in Javascript", 
-        introduction: "",
-        body: "",
+        introduction: "In JavaScript, methods are functions that are associated with objects. Methods can be thought of as actions that an object can perform. When a method is invoked, it operates on the object it is associated with, and can access and modify the object's properties and state. Here are some key concepts related to methods in association with objects in JavaScript:",
+        body: "Object Literal Notation: In JavaScript, you can declare objects using object literal notation, which involves defining properties and methods as key-value pairs. For example, const myObject = { myMethod() { ... }, myProperty: 'value' }.Method Declaration: To declare a method in JavaScript, you can define it as a property of an object using function syntax. For example, const myObject = { myMethod() { ... } }. This Keyword: Inside a method, the this keyword refers to the object that the method is called on. This enables the method to access and manipulate the object's properties and state. Method Invocation: To invoke a method in JavaScript, you can use dot notation, which involves specifying the object name followed by the method name and parentheses. For example, myObject.myMethod(). Return Values: Like functions, methods can return values using the return keyword. When a method returns a value, it can be assigned to a variable or used in other expressions.",
         codesnippet: ``,
-        summary:"",
+        summary:"Overall, methods in association with objects are a powerful feature of JavaScript that enable developers to create more complex and dynamic objects with specialized behavior. By using methods, developers can create objects that can perform specific actions, manipulate their own state and properties, and interact with other objects in a meaningful way.",
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2581,10 +2596,22 @@ const courses = [
         sidebar_title: "Loops",
         image: "https://picsum.photos/800/400",
         description: "What loops are for in Javascript",
-        introduction: "",
-        body: "",
-        codesnippet: ``,
-        summary:"", 
+        introduction: "In JavaScript, loops are used to execute a block of code repeatedly until a certain condition is met. Loops are useful when you need to perform the same task multiple times with different inputs, or when you want to iterate over a collection of data. There are three types of loops in JavaScript:",
+        body: "For Loop: A for loop is used to iterate over a sequence of values, such as the elements in an array or the characters in a string. It consists of an initialization statement, a condition, and an update statement, followed by the code to be executed in each iteration. While Loop: A while loop is used to repeatedly execute a block of code as long as a certain condition is true. It consists of a condition, followed by the code to be executed in each iteration. Do-While Loop: A do-while loop is similar to a while loop, but it always executes the code block at least once before checking the condition. It consists of a code block, followed by the condition. For example:",
+        codesnippet: `
+        for (let i = 0; i < myArray.length; i++) {
+          // code to be executed for each element in myArray
+        }
+
+        while (condition) {
+          // code to be executed as long as the condition is true
+        }
+        
+        do {
+        // code to be executed at least once
+        } while (condition);
+        `,
+        summary:"Loops can be nested inside other loops, allowing you to perform complex iterations and operations. When using loops, it is important to ensure that the condition is properly defined to prevent infinite loops, which can cause your program to crash or become unresponsive.", 
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2640,10 +2667,28 @@ const courses = [
         sidebar_title: "If Statements",
         image: "https://picsum.photos/800/400",
         description: "How to use If statements in Javascript", 
-        introduction: "",
-        body: "",
-        codesnippet: ``,
-        summary:"",
+        introduction: "In JavaScript, an if statement is used to execute a block of code conditionally based on a Boolean expression. The Boolean expression is evaluated to either true or false, and if it is true, the code inside the if block is executed. If the expression is false, the code inside the if block is skipped.",
+        body: "Here, condition is any expression that can be evaluated to true or false. If the condition is true, the code inside the curly braces is executed. If the condition is false, the code inside the curly braces is skipped. You can also use the else keyword to provide an alternative code block to be executed if the condition is false. In addition, you can use the else if keyword to chain multiple conditions together. Here are the three types of if statements written in code form:",
+        codesnippet: `
+        if (condition) {
+          // code to be executed if the condition is true
+        }
+        
+        if (condition) {
+          // code to be executed if the condition is true
+        } else {
+          // code to be executed if the condition is false
+        }
+
+        if (condition1) {
+          // code to be executed if condition1 is true
+        } else if (condition2) {
+          // code to be executed if condition2 is true
+        } else {
+          // code to be executed if all conditions are false
+        }
+        `,
+        summary:"If statements are a fundamental tool for writing conditional logic in JavaScript. They can be used to control the flow of a program based on specific conditions, making your code more flexible and responsive to user input and other variables.",
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2699,10 +2744,38 @@ const courses = [
         sidebar_title: "Switch Statements",
         image: "https://picsum.photos/800/400",
         description: "How to use Switch statements in Javascript",
-        introduction: "",
-        body: "",
-        codesnippet: ``,
-        summary:"", 
+        introduction: "In JavaScript, a switch statement is used to execute different code blocks based on the value of a variable or expression. It is similar to a series of if-else statements, but can be more concise and readable in certain situations.",
+        body: "Here, expression is any variable or expression whose value you want to test, and value1, value2, etc. are the possible values that expression might have. When the switch statement is executed, it compares the value of expression to each of the case values in turn. If expression matches a case value, the code inside that case block is executed. The break statement is used to exit the switch statement and prevent execution of any further cases. If expression doesn't match any of the case values, the code inside the default block is executed (if there is one). Here's an example of first the basic syntax of a switch statement and a in-action example:",
+        codesnippet: `
+        switch (expression) {
+          case value1:
+            // code to be executed if expression equals value1
+            break;
+          case value2:
+            // code to be executed if expression equals value2
+            break;
+          ...
+          default:
+            // code to be executed if expression doesn't match any of the cases
+        }
+        
+        let color = "blue";
+
+        switch (color) {
+          case "red":
+            console.log("The color is red.");
+            break;
+          case "green":
+            console.log("The color is green.");
+            break;
+          case "blue":
+            console.log("The color is blue.");
+            break;
+          default:
+            console.log("The color is not red, green, or blue.");
+        }
+        `,
+        summary:"In this example, the value of the color variable is compared to each of the case values in turn. Since color is equal to 'blue', the code inside the third case block is executed, and the output is 'The color is blue.' The break statement exits the switch statement and prevents execution of the default case.", 
         vimeoId: 76979871,
         quizQuestions: [
             {
@@ -2758,8 +2831,8 @@ const courses = [
         sidebar_title: "Javascript Cheatsheet",
         image: "https://picsum.photos/800/400",
         description: "Recap of the basics of Javascript", 
-        introduction: "",
-        body: "",
+        introduction: "Now, that you have gone through the full Javascript course, here is a cheatsheet of what you should focus on going forward to expand your knowledge in Javascript.",
+        body: "Data Types and Variables: Learn about the different data types in JavaScript, such as strings, numbers, and booleans, and how to declare and use variables to store and manipulate data. Operators: Learn about the different operators in JavaScript, such as arithmetic operators, comparison operators, and logical operators, and how to use them to perform calculations and make decisions. Functions: Learn about functions in JavaScript, how to declare and call them, how to pass arguments and return values, and how to use them to organize your code and make it more reusable. Arrays: Learn about arrays in JavaScript, how to declare and manipulate them, and how to use them to store and manipulate lists of data. Objects: Learn about objects in JavaScript, how to declare and use them, and how to use them to represent complex data structures and behaviors. Control Structures: Learn about control structures in JavaScript, such as if statements, loops, and switch statements, and how to use them to control the flow of your code. Events: Learn about events in JavaScript, how to handle them, and how to use them to create interactive user interfaces. DOM Manipulation: Learn about the Document Object Model (DOM) in JavaScript, how to manipulate it using JavaScript code, and how to use it to create dynamic web pages. Asynchronous Programming: Learn about asynchronous programming in JavaScript, how to use callbacks, promises, and async/await to manage asynchronous tasks, and how to avoid common pitfalls. Debugging: Learn about how to use the JavaScript console and debugger to identify and fix errors in your code, and how to write code that is easy to debug and maintain.",
         codesnippet: ``,
         summary:"",
         vimeoId: 76979871
