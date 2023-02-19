@@ -1069,8 +1069,8 @@ const courses = [
             sidebar_title: "CSS Introduction",
             image: "https://picsum.photos/800/400",
             description: "First CSS module", 
-            introduction: "",
-            body: "",
+            introduction: "Cascading Style Sheets (CSS) is a fundamental technology used in web development that enables you to add style, layout, and design to your HTML documents. With CSS, you can define colors, fonts, spacing, and other visual elements of your web page, making it more appealing and user-friendly.",
+            body: "CSS allows you to create rules that specify how different elements of your HTML document should be displayed, and these rules can be applied to individual elements or to groups of elements. With CSS, you can also create responsive designs that adjust automatically to different screen sizes and devices, ensuring a consistent and optimal user experience across all platforms. Whether you're creating a simple blog or a complex web application, CSS is an essential tool that can help you create beautiful and functional web pages that meet your specific needs.",
             codesnippet: ``,
             summary:"",
             vimeoId: 76979871,
@@ -1128,8 +1128,8 @@ const courses = [
             sidebar_title: "What is CSS?",
             image: "https://picsum.photos/800/400",
             description: "Introduction to what CSS is", 
-            introduction: "",
-            body: "",
+            introduction: " CSS is a style sheet language that is used to describe the presentation of an HTML document. CSS works by creating a set of rules that define how various elements of an HTML document should be displayed on the screen, in print, or other types of media. These rules can be applied to specific HTML tags, such as headings, paragraphs, tables, and images, or to groups of tags based on their class or ID attributes.",
+            body: "CSS offers a wide range of styling options, such as font styles, colors, borders, backgrounds, margins, padding, and positioning. It also allows you to control the layout of your webpage, including how elements are arranged, sized, and aligned relative to each other. One of the main advantages of using CSS is that it separates the content of a webpage from its presentation. This means that you can change the visual style of your webpage without affecting its underlying content. CSS also enables you to create consistent styles across multiple pages, making it easier to maintain and update your website over time. In addition, CSS has evolved to include advanced features such as animations, transitions, and responsive design. With CSS, you can create engaging and interactive web experiences that captivate your audience and enhance your brand identity.",
             codesnippet: ``,
             summary:"",
             vimeoId: 76979871,
@@ -1187,10 +1187,10 @@ const courses = [
             sidebar_title: "CSS Selectors",
             image: "https://picsum.photos/800/400",
             description: "How selectors work in CSS", 
-            introduction: "",
-            body: "",
+            introduction: "CSS selectors are a powerful tool for styling and formatting HTML elements on a webpage. A CSS selector is a pattern that matches one or more HTML elements, allowing you to apply specific styles and formatting to those elements. In this lesson, we will learn about the different types of CSS selectors and how to use them effectively.",
+            body: "Type Selectors: Type selectors are the most basic type of selector in CSS, and they match HTML elements based on their tag name. For example, the selector <p> matches all paragraphs on the page, and the selector <h1> matches all level one headings. Type selectors are used when you want to apply the same styles to all elements of a particular type. Class Selectors: Class selectors are used to match elements that have a specific class attribute. The class attribute is used to group elements together that share a common trait or purpose. To create a class selector, you add a period (.) followed by the class name. For example, the selector .highlight matches all elements with a class of highlight. Class selectors are useful when you want to apply a specific style to a group of related elements. ID Selectors: ID selectors are similar to class selectors, but they are used to match a single element based on its unique ID attribute. To create an ID selector, you add a pound sign (#) followed by the ID name. For example, the selector #header matches the element with an ID of header. ID selectors are used when you want to apply a specific style to a unique element on the page. Attribute Selectors: Attribute selectors are used to match elements based on their attribute values. For example, the selector input[type='text'] matches all text input fields on the page. Attribute selectors are useful when you want to apply a style to elements with specific attribute values. Pseudo-Classes: Pseudo-classes are used to match elements based on their state or position within the document. For example, the selector a:hover matches links that are being hovered over by the user. Pseudo-classes are useful when you want to apply styles to elements based on their interaction with the user. Combinators: Combinators are used to match elements based on their relationship to other elements. There are three types of combinators: descendant, child, and adjacent sibling. Descendant combinators match elements that are descendants of a parent element. Child combinators match elements that are direct children of a parent element. Adjacent sibling combinators match elements that are adjacent to each other in the HTML document.",
             codesnippet: ``,
-            summary:"",
+            summary:"In conclusion, CSS selectors are an essential tool for styling and formatting HTML elements on a webpage. By understanding the different types of selectors and how to use them effectively, you can create stylish and visually appealing web pages that meet your specific design needs.",
             vimeoId: 76979871,
             quizQuestions: [
                 {
@@ -1246,10 +1246,10 @@ const courses = [
             sidebar_title: "CSS Colors",
             image: "https://picsum.photos/800/400",
             description: "How to set colors using CSS", 
-            introduction: "",
-            body: "",
+            introduction: "CSS colors allow you to add visual appeal to your web pages by specifying the color of text, backgrounds, borders, and other elements. ",
+            body: "There are several ways to define colors in CSS, including named colors, hexadecimal values, RGB values, and HSL values. Named colors refer to predefined color names, such as red or blue. Hexadecimal values are six-digit codes that represent a combination of red, green, and blue values, ranging from 00 to FF. RGB values specify a color by its red, green, and blue values, each ranging from 0 to 255. HSL values represent a color using its hue, saturation, and lightness values. By using CSS colors effectively, you can enhance the visual design and aesthetic of your web pages.",
             codesnippet: ``,
-            summary:"",
+            summary:"In addition to these color options, CSS also offers a variety of color-related properties, such as opacity and transparency. By using CSS colors effectively, web designers can create visually appealing and engaging web pages that stand out from the crowd.",
             vimeoId: 76979871,
             quizQuestions: [
                 {
@@ -1305,10 +1305,10 @@ const courses = [
             sidebar_title: "The Box Model",
             image: "https://picsum.photos/800/400",
             description: "Explanation of the box model", 
-            introduction: "",
-            body: "",
+            introduction: "The box model is a fundamental concept in web design that describes how elements are displayed on a web page. It defines how an element is enclosed within a rectangular box, which consists of content, padding, borders, and margins.",
+            body: "The content refers to the actual content of the element, such as text, images, or videos. The content area is the area within the box that contains the element's content. Padding is the space between the content area and the border. It is used to create space around the content area, and can be specified using CSS. The padding area is the area between the content area and the border. Borders are used to define the edges of the box. They can be used to create decorative effects or to visually separate the element from its surroundings. Borders can also be specified using CSS. Margins are the space outside the box, between the box and other elements on the page. Margins can be used to create space between elements, or to center an element on the page. Like padding and borders, margins can also be specified using CSS.",
             codesnippet: ``,
-            summary:"",
+            summary:"The box model is important to understand because it affects the layout and spacing of elements on a web page. By adjusting the values of padding, borders, and margins, web designers can create the desired spacing and layout for their elements. It is also important to note that the size of an element is not only determined by its content, but also by its padding, border, and margin values. In addition to the basic box model, there is also the concept of the box-sizing property in CSS. By default, the box-sizing property is set to content-box, which means that the width and height of an element does not include padding, border, or margin. However, by setting the box-sizing property to border-box, the width and height of an element will include the padding and border, but not the margin. This can be useful when creating responsive designs, as it allows for more precise control over element sizing.",
             vimeoId: 76979871,
             quizQuestions: [
                 {
@@ -1364,8 +1364,8 @@ const courses = [
             sidebar_title: "Padding & Margin",
             image: "https://picsum.photos/800/400",
             description: "How padding and margin works in CSS", 
-            introduction: "",
-            body: "",
+            introduction: "Padding and margin are two important CSS properties that are used to adjust the spacing and layout of elements on a web page.",
+            body: "Padding refers to the space between the content of an element and its border. It is used to create space around an element's content, such as adding space between a paragraph of text and its border. Padding can be specified using CSS, and can be applied to all four sides of an element (top, right, bottom, and left), or individually using the padding-top, padding-right, padding-bottom, and padding-left properties. Margin, on the other hand, refers to the space outside an element, between the element's border and other elements on the page. It is used to create space between elements, such as adding space between two paragraphs of text. Like padding, margin can also be specified using CSS, and can be applied to all four sides of an element (top, right, bottom, and left), or individually using the margin-top, margin-right, margin-bottom, and margin-left properties. Both padding and margin can be specified using different units of measurement, such as pixels, ems, or percentages. Additionally, padding and margin can be specified using shorthand properties, such as padding: 10px 20px 30px 40px, which applies 10 pixels of padding to the top of the element, 20 pixels to the right, 30 pixels to the bottom, and 40 pixels to the left. Understanding how to use padding and margin effectively is important for creating visually appealing and well-spaced web pages. By adjusting the padding and margin values of elements, web designers can create the desired spacing and layout for their page.",
             codesnippet: ``,
             summary:"",
             vimeoId: 76979871,
@@ -1423,10 +1423,13 @@ const courses = [
             sidebar_title: "Borders",
             image: "https://picsum.photos/800/400",
             description: "How to add borders to HTML elements", 
-            introduction: "",
-            body: "",
-            codesnippet: ``,
-            summary:"",
+            introduction: "In CSS, a border is a decorative or structural element that can be applied to an HTML element to create a visible edge around it. Borders can be used to visually separate elements from each other, add emphasis or highlight important elements, or create decorative effects.",
+            body: "To apply a border to an element, you can use the CSS border property. The border property can be used to specify the width, style, and color of the border. In addition to the basic border styles (solid, dashed, dotted, double, groove, ridge, inset, and outset), CSS also provides a way to create custom border styles using the border-image property. The border-image property allows you to specify an image to use as the border instead of a solid or patterned line. For example, the following CSS rule adds a 2-pixel wide solid border of red color to a paragraph element:",
+            codesnippet: `
+            p {
+              border: 2px solid red;
+            }`,
+            summary:"Overall, CSS borders are a versatile and powerful tool for web designers to add structure, visual interest, and style to their web pages.",
             vimeoId: 76979871,
             quizQuestions: [
                 {
@@ -1482,10 +1485,19 @@ const courses = [
             sidebar_title: "Height & Width",
             image: "https://picsum.photos/800/400",
             description: "Why adding height and width can be useful in CSS", 
-            introduction: "",
-            body: "",
-            codesnippet: ``,
-            summary:"",
+            introduction: "Height and width are CSS properties used to define the size of an HTML element, such as an image, a video, or a div container.",
+            body: "The height property specifies the height of an element, and the width property specifies the width of an element. These properties can be set to a fixed value, such as pixels or centimeters, or to a relative value, such as a percentage of the parent element. In example 1, the following CSS rule sets the height and width of an image to 200 pixels. Alternatively, you can use a percentage value to specify the height and width of an element relative to its parent element. For example, the following CSS rule in example 2 sets the height and width of a div container to 50% of its parent element:",
+            codesnippet: `
+            img {
+              height: 200px;
+              width: 200px;
+            }
+            
+            .container {
+              height: 50%;
+              width: 50%;
+            }`,
+            summary:"By using the height and width properties, you can control the size and layout of elements on a web page. These properties are particularly useful when designing responsive web pages that need to adapt to different screen sizes and devices.",
             vimeoId: 76979871,
             quizQuestions: [
                 {
@@ -1541,10 +1553,10 @@ const courses = [
             sidebar_title: "The Display Property",
             image: "https://picsum.photos/800/400",
             description: "How the display property work in CSS", 
-            introduction: "",
-            body: "",
+            introduction: "In CSS, the display property is used to control the visibility and layout of an HTML element. The display property can be set to various values to control how an element is rendered on the web page.",
+            body: "The most common values for the display property are: block: The element is displayed as a block-level element, which takes up the full width of its parent container and starts on a new line. Examples of block-level elements include <div>, <p>, and <h1>. inline: The element is displayed as an inline-level element, which flows with the text and takes up only as much width as necessary. Examples of inline-level elements include <span>, <a>, and <img>. inline-block: The element is displayed as an inline-level element, but it also has a width and height that you can specify, and it allows other elements to sit next to it. This is useful for creating horizontal menus or grids of images. none: The element is not displayed on the web page and takes up no space. This is useful for hiding elements that you don't want to be visible, such as pop-up windows or error messages. flex: The element is displayed as a flexible container that can be used to create responsive layouts. This is useful for creating layouts that adjust to different screen sizes and device orientations. grid: The element is displayed as a grid container that can be used to create complex layouts with rows and columns. This is useful for creating web pages with multiple content areas and navigation menus.",
             codesnippet: ``,
-            summary:"",
+            summary:"By using the display property, you can control how HTML elements are rendered on the web page and create a wide variety of layouts and designs.",
             vimeoId: 76979871,
             quizQuestions: [
                 {
@@ -1600,10 +1612,10 @@ const courses = [
             sidebar_title: "Styling Text",
             image: "https://picsum.photos/800/400",
             description: "How to style text with CSS", 
-            introduction: "",
-            body: "",
+            introduction: "In CSS, text styling refers to the process of defining the visual appearance of text on a web page. Text styling allows you to control the font, size, color, weight, and other visual properties of text to create a specific look and feel for your web page.",
+            body: "The most common CSS properties for text styling are: font-family: Sets the font for the text, such as Arial, Times New Roman, or Verdana. font-size: Sets the size of the text, such as 12px, 16px, or 24px. font-weight: Sets the weight of the text, such as bold, normal, or lighter. color: Sets the color of the text, such as red, blue, or #FFFFFF (hexadecimal value). text-align: Sets the alignment of the text, such as left, center, or right. text-decoration: Sets the decoration of the text, such as underline, overline, or none. text-transform: Sets the transformation of the text, such as uppercase, lowercase, or capitalize.line-height: Sets the height of the line that the text is displayed on, such as 1.5 or 2.",
             codesnippet: ``,
-            summary:"",
+            summary:"By using these properties, you can control the visual appearance of text on your web page and create a cohesive and visually appealing design. Text styling is an important part of web design because it helps to convey the tone and message of your website, and it can also improve readability and user experience.",
             vimeoId: 76979871,
             quizQuestions: [
                 {
@@ -1659,10 +1671,10 @@ const courses = [
             sidebar_title: "Customizing Backgrounds",
             image: "https://picsum.photos/800/400",
             description: "How to change background in CSS", 
-            introduction: "",
-            body: "",
+            introduction: "In CSS, you can customize the background of HTML elements on a web page by setting the background property. This property can be used to control the background color, image, and other properties of an element's background.",
+            body: "The background-color property is used to set the color of an element's background, such as background-color: #FFFFFF; to set the background color to white. The background-image property is used to set an image as the background of an element, such as background-image: url(''image.jpg''); to set the background image to an image file called 'image.jpg'. In addition to the background-color and background-image properties, you can also use other properties to customize the background of an element, such as: background-repeat: Sets whether the background image should be repeated or not, such as background-repeat: repeat; to repeat the image both vertically and horizontally, or background-repeat: no-repeat; to display the image only once. background-size: Sets the size of the background image, such as background-size: cover; to scale the image to cover the entire element, or background-size: contain; to scale the image to fit inside the element. background-position: Sets the position of the background image, such as background-position: center; to center the image horizontally and vertically, or background-position: top right; to position the image in the top right corner of the element.",
             codesnippet: ``,
-            summary:"",
+            summary:"By using these properties, you can customize the background of HTML elements on your web page and create visually appealing designs that enhance the user experience.",
             vimeoId: 76979871,
             quizQuestions: [
                 {
