@@ -1,13 +1,13 @@
-import { Link, useNavigate, useParams } from "react-router-dom";
-import courses from "../data/courses";
-import React, { useEffect, useState } from "react";
-import Vimeo from "@u-wave/react-vimeo";
-import NextLessonButton from "../components/NextLessonButton";
-import Prism from "prismjs";
-import "../../node_modules/prismjs/themes/prism-vsc-dark-plus.css";
-import GoToQuizButton from "../components/GoToQuizButton";
-import PreviousLessonButton from "../components/PreviousLessonButton";
-import CompleteCourse from "../components/CompleteCourseButton";
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import courses from '../data/courses';
+import React, { useEffect, useState } from 'react';
+import Vimeo from '@u-wave/react-vimeo';
+import NextLessonButton from '../components/NextLessonButton';
+import Prism from 'prismjs';
+import 'prismjs/themes/prism-tomorrow.css';
+import GoToQuizButton from '../components/GoToQuizButton';
+import PreviousLessonButton from '../components/PreviousLessonButton';
+import CompleteCourse from '../components/CompleteCourseButton';
 
 function Lesson() {
   const { courseId, lessonId } = useParams();
@@ -39,17 +39,17 @@ function Lesson() {
       <div className="lesson__side-bar">
         {course.lessons.map((lesson) => (
           <button
-          key={lesson.id}
+            key={lesson.id}
             onClick={() => {
-              navigate("/courses/" + course.id + "/lessons/" + lesson.id);
+              navigate('/courses/' + course.id + '/lessons/' + lesson.id);
               setActiveButton(lesson.id);
             }}
             to={`courses/${course}/lessons/${lesson}`}
             className={`side-bar__btns ${
-              activeButton === lesson.id ? "side-bar__active" : ""
+              activeButton === lesson.id ? 'side-bar__active' : ''
             }`}
           >
-            {lesson.id !== 0 && lesson.id + "."} {lesson.sidebar_title}{" "}
+            {lesson.id !== 0 && lesson.id + '.'} {lesson.sidebar_title}{' '}
           </button>
         ))}
       </div>
@@ -57,10 +57,10 @@ function Lesson() {
         <div>
           <header>
             <p>
-              <Link to={"/courses/" + course.id}>Back to {course.title}</Link>
+              <Link to={'/courses/' + course.id}>Back to {course.title}</Link>
             </p>
             <h1>
-              {lessonId > 0 ? lessonId + ". " + lesson.title : lesson.title}
+              {lessonId > 0 ? lessonId + '. ' + lesson.title : lesson.title}
             </h1>
           </header>
           <div>
@@ -72,7 +72,7 @@ function Lesson() {
                 )}
                 <p>{lesson.body}</p>
                 {lesson.codesnippet && (
-                  <pre className={"language-javascript"}>
+                  <pre className={'language-javascript'}>
                     <code>{lesson.codesnippet}</code>
                   </pre>
                 )}
