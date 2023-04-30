@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Vimeo from "@u-wave/react-vimeo";
 import NextLessonButton from "../components/NextLessonButton";
 import Prism from "prismjs";
-import "prismjs/themes/prism-vsc-dark-plus.css";
+import "../../node_modules/prismjs/themes/prism-vsc-dark-plus.css";
 import GoToQuizButton from "../components/GoToQuizButton";
 import PreviousLessonButton from "../components/PreviousLessonButton";
 import CompleteCourse from "../components/CompleteCourseButton";
